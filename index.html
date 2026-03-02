@@ -1,1 +1,701 @@
-PLACEHOLDER_WILL_BE_REPLACED
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wild Signal GEO Intelligence Research Library</title>
+<meta name="description" content="Research and field guides on Generative Engine Optimization (GEO), AI search visibility, and the citation economy. Published by Wild Signal.">
+<link rel="canonical" href="https://daria-ship-it.github.io/wildsignal-research/index.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wild Signal GEO Intelligence Research Library">
+<meta property="og:description" content="Research and field guides on GEO, AI search visibility, and the citation economy from Wild Signal Agency.">
+<meta property="og:url" content="https://daria-ship-it.github.io/wildsignal-research/index.html">
+<meta property="og:site_name" content="Wild Signal">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Wild Signal GEO Research Library",
+  "url": "https://daria-ship-it.github.io/wildsignal-research",
+  "description": "Research and field guides on Generative Engine Optimization (GEO), AI search visibility, and the citation economy.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wild Signal",
+    "url": "https://wildsignal.agency",
+    "description": "AI intelligence firm focused on Generative Engine Optimization (GEO) and the citation economy."
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Wild Signal",
+  "url": "https://wildsignal.agency",
+  "description": "Wild Signal is an AI intelligence firm helping brands navigate the new information economy through Generative Engine Optimization (GEO).",
+  "sameAs": [
+    "https://wildsignal.agency"
+  ]
+}
+</script>
+
+<!-- AI discoverability -->
+<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/plain" href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">
+
+<style>
+/* Wild Signal GEO Research Hub — base styles */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-accent: #1d4ed8;
+  --color-border: #e5e7eb;
+  --color-tag: #f3f4f6;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 4px;
+  --max-prose: 720px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Site header ── */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 24px;
+  background: var(--color-surface);
+}
+.site-header .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.site-header .logo {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+.site-header .logo span { color: var(--color-accent); }
+.site-header nav { margin-left: auto; font-size: 14px; }
+.site-header nav a { color: var(--color-muted); margin-left: 20px; }
+.site-header nav a:hover { color: var(--color-text); text-decoration: none; }
+
+/* ── Layout wrappers ── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.prose {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Index page ── */
+.index-hero {
+  padding: 56px 24px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.index-hero h1 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+.index-hero p {
+  color: var(--color-muted);
+  font-size: 15px;
+  max-width: 640px;
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+.index-hero .external-link {
+  display: inline-block;
+  font-size: 13px;
+  background: var(--color-tag);
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+.index-hero .external-link:hover { background: var(--color-border); text-decoration: none; }
+
+.stats-bar {
+  display: flex;
+  gap: 32px;
+  padding: 16px 0 32px;
+  font-size: 13px;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 40px;
+}
+.stats-bar strong { color: var(--color-text); font-weight: 600; }
+
+.category-section {
+  max-width: 1100px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+.category-section h2 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-list { list-style: none; margin: 0; padding: 0; }
+.article-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 24px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.article-item:last-child { border-bottom: none; }
+.article-item-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+.article-item-title a { color: inherit; }
+.article-item-title a:hover { color: var(--color-accent); text-decoration: none; }
+.article-item-desc {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.article-item-meta {
+  font-size: 12px;
+  color: var(--color-muted);
+  white-space: nowrap;
+  text-align: right;
+  padding-top: 2px;
+}
+
+/* ── Article page ── */
+.article-header {
+  padding: 48px 24px 32px;
+  max-width: var(--max-prose);
+  margin: 0 auto;
+}
+.article-header h1 {
+  font-size: clamp(20px, 3.5vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+.article-meta strong { color: var(--color-text); font-weight: 500; }
+.original-link {
+  display: inline-block;
+  font-size: 12px;
+  background: var(--color-tag);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: var(--color-muted);
+  margin-top: 10px;
+}
+.original-link:hover { background: var(--color-border); text-decoration: none; }
+
+/* Article content */
+.article-body { padding-bottom: 64px; }
+.article-body h2 { font-size: 19px; font-weight: 700; margin: 2em 0 0.6em; letter-spacing: -0.01em; }
+.article-body h3 { font-size: 16px; font-weight: 700; margin: 1.6em 0 0.5em; }
+.article-body h4 { font-size: 15px; font-weight: 600; margin: 1.4em 0 0.4em; color: var(--color-muted); }
+.article-body p { margin: 0 0 1.2em; }
+.article-body ul, .article-body ol { padding-left: 1.6em; margin: 0 0 1.2em; }
+.article-body li { margin-bottom: 0.4em; }
+.article-body code { font-size: 13px; background: var(--color-tag); padding: 1px 5px; border-radius: 3px; font-family: 'SF Mono', 'Fira Code', monospace; }
+.article-body strong { font-weight: 600; }
+.article-body hr { border: none; border-top: 1px solid var(--color-border); margin: 2em 0; }
+.article-body blockquote { border-left: 3px solid var(--color-border); margin: 0 0 1.2em; padding-left: 1em; color: var(--color-muted); }
+
+.back-link { font-size: 13px; color: var(--color-muted); display: block; margin-bottom: 24px; }
+.back-link:hover { color: var(--color-text); text-decoration: none; }
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 24px;
+  font-size: 12px;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 32px;
+}
+.site-footer a { color: var(--color-muted); }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .article-item { grid-template-columns: 1fr; }
+  .article-item-meta { text-align: left; }
+  .stats-bar { gap: 16px; flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <span class="logo">Wild Signal <span>Research Library</span></span>
+    <nav>
+      <a href="https://wildsignal.agency" rel="noopener">wildsignal.agency</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="index-hero">
+    <h1>Wild Signal GEO Intelligence Research Library</h1>
+    <p>Research and field guides on Generative Engine Optimization (GEO), AI search visibility, and the citation economy. Published by Wild Signal — an AI intelligence firm helping brands navigate the new information economy.</p>
+    <a href="https://wildsignal.agency" class="external-link" rel="noopener">wildsignal.agency ↗</a>
+  </div>
+
+  <div class="container">
+    <div class="stats-bar">
+      <span><strong>40</strong> articles</span>
+      <span><strong>6</strong> topic areas</span>
+      <span>Updated <strong>2026-03-02</strong></span>
+      <span><a href="llms.txt" style="color:inherit">llms.txt</a> · <a href="llms-full.txt" style="color:inherit">llms-full.txt</a> · <a href=".well-known/llm-index.llmfeed.json" style="color:inherit">llmfeed.json</a></span>
+    </div>
+  </div>
+
+  <section class="category-section">
+      <h2>GEO Fundamentals</h2>
+      <ul class="article-list">
+        <li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/geo-vs-aeo.html">GEO vs. AEO: What&#x27;s the Difference?</a></div>
+            <div class="article-item-desc">GEO (Generative Engine Optimization) and AEO (AI Engine Optimization) are the same thing—optimizing content so AI models cite it in their responses. Some people...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>October 25, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/seo-isnt-dead.html">No, SEO isn&#x27;t Dead.</a></div>
+            <div class="article-item-desc">Traditional search still matters, but AI-powered answers are eating into search traffic. Smart brands are doing both: optimizing for Google&#x27;s algorithms while a...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>October 21, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-to-optimize-content-for-ai-search-engines.html">How to Optimize Content for AI Search Engines</a></div>
+            <div class="article-item-desc">How to Optimize Content for AI Search Engines</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/why-ai-search-rewards-structure-over-keywords.html">Why AI Search Rewards Structure Over Keywords</a></div>
+            <div class="article-item-desc">Keywords told search engines what a page was about. Structure tells AI systems how to think about it. AI models extract meaning from patterns, hierarchies, and...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/do-faqs-help-with-ai-visibility.html">Do FAQs Help With AI Visibility?</a></div>
+            <div class="article-item-desc">FAQs can help with AI visibility—but only if done well. AI systems respond to question-answer formats because that mirrors how they were trained. However, shall...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/struggling-to-appear-in-llm-responses-heres-what-to-do.html">Struggling to Appear in LLM Responses? Here&#x27;s What to Do.</a></div>
+            <div class="article-item-desc">Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you do...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>February 27, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-long-geo-takes-to-show-results.html">How Long GEO Takes to Show Results</a></div>
+            <div class="article-item-desc">GEO doesn&#x27;t work like SEO. Learn realistic timelines for generative engine optimization, the three phases of impact, and what accelerates or slows results.</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/why-one-geo-strategy-does-not-fit-all-models.html">Why One GEO Strategy Does Not Fit All Models</a></div>
+            <div class="article-item-desc">Why One GEO Strategy Does Not Fit All Models</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-should-i-look-for-in-a-geo-agency.html">What Should I Look for in a GEO Agency?</a></div>
+            <div class="article-item-desc">Look for a GEO agency with proprietary data on AI citation patterns, real expertise in how AI models work, and a track record of optimizing content for citabili...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>October 21, 2025</div>
+          </div>
+        </li>
+      </ul>
+    </section><section class="category-section">
+      <h2>AI Search Mechanics</h2>
+      <ul class="article-list">
+        <li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-do-large-language-models-find-answers.html">How Do Large Language Models Find Answers?</a></div>
+            <div class="article-item-desc">Large language models do not search the web in real time—they generate answers from patterns learned during training. When you ask a question, the model predict...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-training-data-shapes-ai-recommendations.html">How Training Data Shapes AI Recommendations</a></div>
+            <div class="article-item-desc">AI recommendations are reflections of training data, not objective assessments. Models learn preferences and trust signals from content they were trained on. If...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-ai-handles-conflicting-information.html">How AI Handles Conflicting Information</a></div>
+            <div class="article-item-desc">When AI systems encounter conflicting information, they weigh source authority, recency, consensus, and internal consistency. Conflicts create uncertainty, lead...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-happens-when-ai-cant-find-a-good-source.html">What Happens When AI Can&#x27;t Find a Good Source?</a></div>
+            <div class="article-item-desc">What Happens When AI Can&#x27;t Find a Good Source?</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/why-different-llms-trust-different-sources.html">Why Different LLMs Trust Different Sources</a></div>
+            <div class="article-item-desc">Why Different LLMs Trust Different Sources</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-ai-search-affects-voice-assistants-and-home-devices.html">How AI Search Affects Voice Assistants and Home Devices</a></div>
+            <div class="article-item-desc">AI search is embedded into voice assistants, home devices, cars, and wearables. Learn how discovery shifts from user-driven exploration to system-driven decisio...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-it-means-when-there-is-only-one-answer.html">What It Means When There Is Only One Answer</a></div>
+            <div class="article-item-desc">AI search is transforming the internet from options to decisions. Learn what happens to brand competition when AI provides a single answer instead of a list.</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/does-it-matter-when-an-article-is-published-for-it-to-be-cite.html">Does It Matter When an Article Is Published for It to Be Cited?</a></div>
+            <div class="article-item-desc">Yes, but not how you think. Recency matters for time-sensitive topics, but for evergreen content, publication date is less important than quality and structure....</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>October 23, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/webmcp-the-agentic-web-and-why-geo-just-got-a-new-front-door.html">What Is WebMCP and How Do You Make Your Website AI-Agent Ready?</a></div>
+            <div class="article-item-desc">WebMCP (Web Model Context Protocol) is a new Google standard that lets websites expose their capabilities — forms, content, data — directly to AI agents as stru...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>February 15, 2026</div>
+          </div>
+        </li>
+      </ul>
+    </section><section class="category-section">
+      <h2>Brand Strategy</h2>
+      <ul class="article-list">
+        <li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-brands-should-prepare-for-ai-gatekeepers.html">How Brands Should Prepare for AI Gatekeepers</a></div>
+            <div class="article-item-desc">How Brands Should Prepare for AI Gatekeepers</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-ai-interprets-brand-authority.html">How AI Interprets Brand Authority</a></div>
+            <div class="article-item-desc">Brand authority is now interpreted by machines. Learn how AI systems evaluate trust through consistency, consensus, and corroboration—and how to build it.</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-long-term-memory-in-ai-systems-means-for-brands.html">What Long-Term Memory in AI Systems Means for Brands</a></div>
+            <div class="article-item-desc">Long-term memory in AI systems is reshaping how brands are discovered, trusted, and chosen. Learn how AI memory creates permanent discovery advantages or risks...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/why-platform-dependence-is-risky-in-the-ai-era.html">Why Platform Dependence Is Risky in the AI Era</a></div>
+            <div class="article-item-desc">Brands that built discovery strategy around a single platform learned the cost of dependence when algorithms changed. AI fragments discovery across multiple sys...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-reddit-forums-and-long-form-reviews-influence-ai-answers.html">How Reddit, Forums, and Long-Form Reviews Influence AI Answers</a></div>
+            <div class="article-item-desc">How Reddit, Forums, and Long-Form Reviews Influence AI Answers</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-to-audit-your-brands-ai-search-presence.html">How to Audit Your Brand&#x27;s AI Search Presence</a></div>
+            <div class="article-item-desc">How to Audit Your Brand&#x27;s AI Search Presence</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-data-gives-geo-a-competitive-moat.html">How Data Gives GEO a Competitive Moat</a></div>
+            <div class="article-item-desc">Original data is the most defensible asset in AI search. AI systems prioritize unique, verifiable information they cannot find elsewhere. Brands that produce pr...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li>
+      </ul>
+    </section><section class="category-section">
+      <h2>Measurement &amp; Metrics</h2>
+      <ul class="article-list">
+        <li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-to-measure-ai-search-visibility.html">How to Measure AI Search Visibility</a></div>
+            <div class="article-item-desc">Measuring AI search visibility requires fundamentally different approaches than traditional SEO. There are no rankings or impressions to count. Visibility is me...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-are-the-main-measurements-of-geo-to-be-aware-of.html">What Are the Main Measurements of GEO to Be Aware Of?</a></div>
+            <div class="article-item-desc">What Are the Main Measurements of GEO to Be Aware Of?</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>October 21, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-does-average-position-mean-in-ai-answers.html">What Does Average Position Mean in AI Answers?</a></div>
+            <div class="article-item-desc">What Does Average Position Mean in AI Answers?</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-is-citation-rate-in-geo.html">What Is Citation Rate in GEO?</a></div>
+            <div class="article-item-desc">Citation rate measures how often AI systems reference your content as a source when generating answers. Unlike mentions, citations track when AI explicitly attr...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/why-citations-are-the-new-backlinks.html">Why Citations Are the New Backlinks</a></div>
+            <div class="article-item-desc">Backlinks built authority in traditional search by signaling trust through links. AI search has an equivalent: citations. When AI systems cite your content, the...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-is-an-ai-citation.html">What Is an AI Citation?</a></div>
+            <div class="article-item-desc">An AI citation is when an AI model references a specific source while generating a response—usually showing as a link, footnote, or inline reference to the orig...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>October 22, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-makes-content-citable-by-ai.html">What Makes Content Citable by AI?</a></div>
+            <div class="article-item-desc">AI systems cite content they trust to be accurate, clear, and attributable. Citable content makes definitive statements, provides sufficient context, and can be...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Daria Dubois</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li>
+      </ul>
+    </section><section class="category-section">
+      <h2>Industry Analysis</h2>
+      <ul class="article-list">
+        <li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/perplexity-computer-what-it-means-for-brands-and-ai-search.html">Perplexity Computer Changes the Math on AI Search</a></div>
+            <div class="article-item-desc">Perplexity Computer Changes the Math on AI Search</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>February 27, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/chatgpt-ads-are-here-what-brands-need-to-know.html">ChatGPT Has Ads Now. Here&#x27;s What That Actually Changes.</a></div>
+            <div class="article-item-desc">ChatGPT Has Ads Now. Here&#x27;s What That Actually Changes.</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>February 27, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/why-is-reddit-the-most-cited-thing-on-the-web.html">Why is Reddit The Most Cited Thing on the Web?</a></div>
+            <div class="article-item-desc">Why is Reddit The Most Cited Thing on the Web?</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>October 26, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/does-a-publishing-deal-with-openai-impact-geo-relevance.html">Does a Publishing Deal With OpenAI Impact GEO Relevance?</a></div>
+            <div class="article-item-desc">It probably means preferential treatment, but we don&#x27;t know exactly how much. Outlets with OpenAI deals likely get cited more often because their content is dir...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>October 16, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/does-paid-matter-on-ai-search.html">Does Paid Matter on AI Search?</a></div>
+            <div class="article-item-desc">Right now, AI citations are earned organically based on content quality. But paid placements in AI search are starting to emerge—expect sponsored citations, par...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>October 18, 2025</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/is-paid-media-coming-to-ai.html">Is Paid Media Coming to AI?</a></div>
+            <div class="article-item-desc">It&#x27;s already here. Perplexity has launched sponsored answers, Google shows ads around AI Overviews, and OpenAI is exploring ad models. Expect paid placements in...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>October 20, 2025</div>
+          </div>
+        </li>
+      </ul>
+    </section><section class="category-section">
+      <h2>PR &amp; Earned Media</h2>
+      <ul class="article-list">
+        <li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/what-ai-search-means-for-pr-and-earned-media.html">What AI Search Means for PR and Earned Media</a></div>
+            <div class="article-item-desc">AI search transforms PR from a visibility play into an authority-building discipline. Media coverage now serves two audiences: humans who read it and AI systems...</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 6, 2026</div>
+          </div>
+        </li><li class="article-item">
+          <div>
+            <div class="article-item-title"><a href="articles/how-pr-must-evolve-for-ai-discovery.html">How PR Must Evolve for AI Discovery</a></div>
+            <div class="article-item-desc">PR was built for human discovery. AI changes that. Learn how public relations must evolve from visibility-driven placement to authority-driven signal building.</div>
+          </div>
+          <div class="article-item-meta">
+            <div>Andy Pray</div>
+            <div>January 1, 2026</div>
+          </div>
+        </li>
+      </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+  <p>Wild Signal GEO Research Library · <a href="https://wildsignal.agency" rel="noopener">wildsignal.agency</a> · 
+  <a href="llms.txt">llms.txt</a> · <a href="sitemap.xml">sitemap.xml</a></p>
+</footer>
+
+</body>
+</html>
