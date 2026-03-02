@@ -12,6 +12,50 @@
 **Canonical URL:** https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do  
 **Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/struggling-to-appear-in-llm-responses-heres-what-to-do.html
 
+Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you don't show up. Or worse, your competitors do.
+
+That gap between your search presence and your AI presence is where most brands are stuck right now. And it's not because their content is bad. It's because AI systems find, evaluate, and surface information differently than search engines do.
+
+## Why Traditional Content Doesn't Automatically Transfer
+
+Google indexes pages. LLMs interpret sources. The distinction sounds minor, but it changes what content needs to look like and where it needs to live.
+
+A page that ranks well on Google might be structured around keyword density, internal linking, and metadata. An LLM doesn't care about any of that. It cares about whether your content provides a clear, direct, factual answer to the kind of question a user would ask in a conversational prompt. It cares whether your claims are supported by signals the model considers authoritative. And it cares whether the information is structured in a way that's easy to extract and attribute.
+
+Most branded content fails on at least one of those criteria. Not because of quality, but because it was built for a different system.
+
+## The Three Reasons Your Brand Isn't Showing Up
+
+1. Your content doesn't answer the right questions. LLMs respond to prompts. If your content isn't structured around the questions your audience actually asks, it won't get pulled into responses.
+2. Your authority signals are weak or missing. Bylines, citations, expertise markers, and domain credibility all factor into how models weight sources. Anonymous or generic content gets deprioritized.
+3. Your content isn't distributed where LLMs look. Models are trained on curated corpora. If your content hasn't been published in, linked from, or referenced by sources those models treat as authoritative, it may simply not be in the training set in a meaningful way.
+
+## What GEO Actually Addresses
+
+Generative Engine Optimization (GEO) is the practice of structuring content so it can be extracted, attributed, and cited by AI systems. It's not a rebrand of SEO. The criteria for AI citation are different enough that GEO requires its own methodology.
+
+The core elements:
+- **Clear question-answer structure**: Content that directly answers specific questions performs better than content that explores topics generally.
+- **Attribution signals**: Named authors with demonstrated expertise, linked credentials, and clear organizational affiliation.
+- **Factual precision**: Specific claims with supporting data or citations to primary sources.
+- **Canonical distribution**: Publishing in formats and locations that AI training pipelines treat as credible.
+
+## What You Can Do Starting Today
+
+You don't need a full GEO overhaul to start moving in the right direction. A few targeted changes can make a meaningful difference:
+
+**Audit your current AI presence.** Search your brand name and category in ChatGPT, Perplexity, and Gemini. Document where you appear, where competitors appear, and what sources are being cited. This is your baseline.
+
+**Identify your highest-value questions.** What are the five to ten questions your ideal customers ask before making a decision in your category? These are the prompts you need your content to answer.
+
+**Add author attribution to everything.** If your content doesn't have a named author with visible expertise signals, fix that first. It's one of the highest-impact changes you can make.
+
+**Restructure at least one piece of content per week.** Take an existing article and rewrite it with a direct answer in the first paragraph, structured subheadings that mirror common questions, and specific factual claims with sources.
+
+**Monitor and iterate.** AI search results shift as models update and as new content enters the training ecosystem. Track your citations monthly and adjust.
+
+The brands that start building AI citation authority now will have a significant advantage as AI-powered search becomes the default. The ones that wait will face the same uphill climb that late movers faced in traditional SEO—but compressed into a shorter window.
+
 **Summary:** If your brand isn't appearing in AI-generated answers, the problem usually isn't awareness—it's citability. This article explains why AI models skip certain brands, what makes content citable, and what you can do about it starting today.
 
 **Key Points:**
@@ -22,5 +66,609 @@
 *   Start with an audit: search your brand in ChatGPT, Perplexity, and Gemini.
 
 **Tags:** geo, ai-visibility, llm-citations, content-strategy, brand-authority
+
+---
+
+# How Does GEO Work?
+
+**Author:** Andy Pray  
+**Published:** February 22, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/how-does-geo-work  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/how-does-geo-work.html
+
+GEO stands for Generative Engine Optimization. It's the practice of structuring content so that AI language models—ChatGPT, Perplexity, Claude, Gemini—can find, interpret, and cite it in their responses.
+
+Search engines rank pages. Generative AI cites sources. The mechanism is different, which means the optimization strategy has to be different too.
+
+## What GEO Is Trying to Accomplish
+
+When someone asks an AI a question, the model doesn't run a keyword match. It generates a response using patterns from its training data and, in some cases, live retrieval. The content it surfaces has to meet a different standard than what SEO targets.
+
+GEO is designed to help content meet that standard. Specifically, it focuses on:
+- Making content clearly answerable to specific questions
+- Adding authority signals that models use to evaluate source credibility
+- Structuring content for extraction, not just for reading
+- Getting content into distribution channels that AI systems trust and index
+
+## How GEO Differs from SEO
+
+SEO optimizes for algorithmic ranking signals: keyword density, backlinks, page speed, structured data markup. These factors influence where a page appears in a list of results.
+
+GEO optimizes for model comprehension and citation. The question isn't whether a page appears near the top of a list—it's whether the model treats the source as credible enough to cite and whether the content is structured in a way the model can extract and attribute.
+
+Some SEO fundamentals carry over. Authoritative domains still matter. Content quality still matters. But the specific techniques diverge significantly.
+
+## The Three Core Pillars of GEO
+
+**1. Citability**
+Citable content answers questions directly, names its authors, cites its sources, and makes factual claims that can be attributed and verified. It's written to be extracted, not just read.
+
+**2. Authority Distribution**
+Where your content lives matters. Models develop trust for sources based on training data. Getting your content published on, linked from, or referenced by sources that models already trust accelerates the process.
+
+**3. Structural Optimization**
+Content needs to be formatted for AI comprehension. That means clear question-answer pairs, specific rather than vague claims, direct openings that state the answer before explaining it, and metadata that makes authorship and publication context explicit.
+
+## What GEO Does Not Include
+
+GEO is not about gaming AI systems. There's no equivalent of keyword stuffing that works here. Models evaluate semantic meaning, not surface-level signals.
+
+GEO also isn't a one-time fix. AI models update. Training data evolves. Citation patterns shift. Effective GEO requires ongoing monitoring and iteration.
+
+## Summary
+
+GEO works by making content easier for AI models to find, trust, and cite. The core mechanisms are citability, authority distribution, and structural optimization. It's distinct from SEO in its goals and techniques, though some fundamentals overlap.
+
+**Key Points:**
+*   GEO stands for Generative Engine Optimization.
+*   It targets AI model citations rather than search engine rankings.
+*   Core pillars: citability, authority distribution, structural optimization.
+*   Differs from SEO in mechanism and technique.
+*   Requires ongoing monitoring as models and training data evolve.
+
+**Tags:** geo, generative-engine-optimization, ai-search, seo-vs-geo, content-strategy
+
+---
+
+# What Is GEO?
+
+**Author:** Andy Pray  
+**Published:** February 18, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/what-is-geo  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-is-geo.html
+
+GEO stands for Generative Engine Optimization. It's the discipline of structuring content so that AI language models—ChatGPT, Perplexity, Claude, Gemini—can find, extract, and cite it when generating responses to user queries.
+
+It emerged as a distinct field because AI-generated search works fundamentally differently from traditional search. Ranking in Google requires one set of strategies. Getting cited in an AI response requires a different set.
+
+## The Core Problem GEO Solves
+
+Brands and publishers invest heavily in content. Most of that content was built for Google. When AI-powered search became mainstream, many discovered that strong Google rankings didn't automatically translate into AI citations.
+
+The reason: AI models don't rank pages. They generate responses. The content they draw from has to meet different standards—it needs to be clearly attributable, factually precise, and structured for extraction rather than for browsing.
+
+GEO is the practice of making content meet those standards.
+
+## How GEO Relates to SEO
+
+SEO (Search Engine Optimization) is about getting pages to rank in search engine results. GEO is about getting content to be cited in AI-generated responses. The goals overlap—both want content to be found and used—but the mechanisms are different.
+
+SEO targets algorithmic signals: keyword matching, backlinks, page authority, technical optimization. GEO targets model comprehension signals: answer clarity, authority markers, factual precision, distribution in trusted corpora.
+
+Some SEO work helps GEO. Publishing on authoritative domains, building quality backlinks, and maintaining content accuracy all matter for both. But GEO requires additional, distinct work that SEO doesn't address.
+
+## What Makes Content GEO-Optimized
+
+GEO-optimized content shares a few key characteristics:
+
+**It answers specific questions directly.** The first paragraph states the answer. Subheadings mirror the questions users actually ask. There's no burying the lead.
+
+**It has clear attribution.** Named authors with visible expertise credentials. Organizational affiliation. Publication dates. Sources cited for factual claims.
+
+**It's factually precise.** Vague claims don't get cited. Specific, verifiable claims do. If you say something is true, you should be able to point to a source.
+
+**It's distributed in trusted channels.** Content that lives only on a brand's own website may be less likely to be picked up than content that appears in, or is referenced by, sources AI training pipelines treat as credible.
+
+## Why GEO Matters Now
+
+AI-powered search is eating traditional search. Perplexity, ChatGPT search, Gemini, and similar tools are being used for queries that used to go straight to Google. That shift is still early, but it's accelerating.
+
+Brands that build AI citation authority now will have a structural advantage as that shift continues. Brands that don't will find themselves invisible in a growing share of search-driven discovery.
+
+**Summary:** GEO (Generative Engine Optimization) is the practice of making content citable by AI models. It emerged because AI-generated search works differently from traditional search, and ranking in Google doesn't automatically mean getting cited by ChatGPT or Perplexity.
+
+**Key Points:**
+*   GEO = Generative Engine Optimization.
+*   Optimizes for AI citations, not search engine rankings.
+*   Distinct from but related to SEO.
+*   Requires answer-first structure, attribution, factual precision, and trusted distribution.
+*   Increasingly important as AI search grows.
+
+**Tags:** geo, generative-engine-optimization, ai-search, seo-comparison, ai-citations
+
+---
+
+# What Is AEO (Answer Engine Optimization)?
+
+**Author:** Andy Pray  
+**Published:** February 13, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/what-is-aeo  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-is-aeo.html
+
+AEO stands for Answer Engine Optimization. It refers to the practice of structuring content so that it's surfaced by answer engines—AI systems that respond to queries with direct answers rather than a list of links.
+
+Answer engines include ChatGPT, Perplexity, Claude, Gemini, and similar tools. When a user asks one of these systems a question, it generates a direct response, sometimes citing sources, sometimes not. AEO is about making your content one of the sources that gets cited.
+
+## How AEO Differs from SEO
+
+SEO is designed for search engines that return ranked lists of links. The goal is to appear near the top of that list. Success is measured in rankings and click-through rates.
+
+AEO is designed for systems that return answers. The goal is to be cited in the answer itself. Success is measured in citations and visibility within AI-generated responses.
+
+The distinction matters because the optimization criteria are different. SEO prioritizes keyword relevance, domain authority, and backlink profiles. AEO prioritizes answer clarity, source credibility, and structural compatibility with how AI models extract information.
+
+## AEO and GEO: Related but Distinct
+
+You'll also hear the term GEO—Generative Engine Optimization. The two terms are often used interchangeably, and in practice they refer to similar work. The distinction, where one exists:
+
+- **AEO** tends to focus on the question-and-answer format and getting content to appear in direct answer snippets.
+- **GEO** tends to encompass the broader practice of optimizing for generative AI systems, including structural and authority-based optimizations beyond just Q&A formatting.
+
+In practice, the terms overlap significantly. Most practitioners use them interchangeably.
+
+## What AEO Involves in Practice
+
+Effective AEO typically includes:
+
+**Question-first content structure.** Every piece of content should be organized around a specific question and answer it directly in the opening paragraph.
+
+**Clear author attribution.** AI systems evaluate source credibility. Content with named, credentialed authors performs better than anonymous or byline-free content.
+
+**Factual precision.** Vague content doesn't get cited. Specific, verifiable claims with sourcing do.
+
+**Structured formatting.** Use of headers, bullet points, and clear logical flow helps AI models extract and attribute content accurately.
+
+**Distribution in credible channels.** Getting content published in, or referenced by, sources that AI training pipelines treat as credible.
+
+## Why AEO Is Increasingly Important
+
+Answer engines are capturing an increasing share of search queries. As users default to AI tools for research and discovery, brands that don't appear in AI-generated answers are effectively invisible for a growing segment of the market.
+
+AEO is how brands build that visibility.
+
+**Summary:** AEO (Answer Engine Optimization) is the practice of optimizing content to be cited by AI-powered answer engines like ChatGPT and Perplexity. It differs from SEO in its focus on AI citations rather than search rankings, and overlaps significantly with GEO.
+
+**Key Points:**
+*   AEO = Answer Engine Optimization.
+*   Targets AI answer engines, not traditional search rankings.
+*   Related to GEO, often used interchangeably.
+*   Requires answer-first structure, attribution, factual precision.
+*   Increasingly important as answer engines capture search market share.
+
+**Tags:** aeo, answer-engine-optimization, geo, ai-search, ai-citations
+
+---
+
+# Is GEO Different from SEO?
+
+**Author:** Andy Pray  
+**Published:** February 10, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/is-geo-different-from-seo  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/is-geo-different-from-seo.html
+
+Yes. GEO and SEO target different systems, measure different outcomes, and require different techniques. They share some fundamentals, but they're not the same discipline.
+
+## What SEO Optimizes For
+
+SEO—Search Engine Optimization—is designed to improve a page's ranking in search engine results. Google and other search engines use algorithmic signals to determine which pages to show for a given query. SEO is the practice of influencing those signals.
+
+Key SEO signals include: keyword relevance, backlink profile, domain authority, page speed, mobile optimization, and structured data markup.
+
+Success in SEO is measured by rankings, organic traffic, and click-through rates. A successful SEO outcome is a page appearing at the top of a results list.
+
+## What GEO Optimizes For
+
+GEO—Generative Engine Optimization—is designed to improve how AI language models find, evaluate, and cite content. AI systems don't return ranked lists—they generate responses. The content they draw from needs to meet different criteria.
+
+Key GEO signals include: answer clarity, author attribution, factual precision, content structure, and distribution in corpora that AI models treat as credible.
+
+Success in GEO is measured by AI citations—whether your content appears in AI-generated responses, and how prominently.
+
+## Where They Overlap
+
+Some fundamentals carry over from SEO to GEO:
+
+- **Domain credibility**: Publishing on authoritative, well-maintained domains helps both.
+- **Content quality**: Accurate, well-written content performs better in both systems.
+- **Backlinks and references**: Being cited by other credible sources helps in both contexts.
+- **Structured content**: Clear headers, logical organization, and readable formatting benefit both SEO and AI comprehension.
+
+## Where They Diverge
+
+The divergence is significant:
+
+- **Keywords vs. questions**: SEO targets keyword queries. GEO targets conversational prompts and the questions behind them.
+- **Rankings vs. citations**: SEO aims for list position. GEO aims for inclusion in a generated answer.
+- **Metadata vs. attribution**: SEO uses meta tags and structured data. GEO relies on explicit author attribution and sourcing within the content itself.
+- **Backlinks vs. corpus distribution**: SEO values backlinks to a page. GEO values whether the content appears in training data or retrieval sources that AI models trust.
+
+## The Practical Implication
+
+A brand can have excellent SEO and poor GEO. Ranking well on Google does not automatically translate into appearing in AI responses. The optimization work is distinct.
+
+Investment in GEO doesn't undermine SEO—many of the practices are complementary. But treating GEO as simply an extension of SEO will leave gaps.
+
+**Summary:** GEO and SEO are related but distinct disciplines. SEO targets search engine rankings; GEO targets AI citations. Some fundamentals overlap, but the techniques, signals, and success metrics are different.
+
+**Key Points:**
+*   GEO and SEO target different systems and measure different outcomes.
+*   SEO signals: keywords, backlinks, page speed, authority.
+*   GEO signals: answer clarity, attribution, factual precision, corpus distribution.
+*   Some overlap: domain credibility, content quality, structured formatting.
+*   Good SEO doesn't guarantee good GEO.
+
+**Tags:** geo, seo, seo-vs-geo, ai-search, content-strategy
+
+---
+
+# What Is an AI Search Engine?
+
+**Author:** Andy Pray  
+**Published:** February 5, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/what-is-an-ai-search-engine  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-is-an-ai-search-engine.html
+
+An AI search engine is a tool that uses a large language model (LLM) to generate direct answers to queries, rather than returning a ranked list of links.
+
+Traditional search engines—Google, Bing, DuckDuckGo—take a query and return a list of web pages ranked by relevance. The user has to click through and read to find the answer.
+
+AI search engines—Perplexity, ChatGPT search, Gemini, Claude—take a query and generate a synthesized response. They may cite sources within the response, but the answer itself is generated, not retrieved.
+
+## How AI Search Engines Work
+
+Most AI search engines combine two capabilities:
+
+**1. Language model generation**: A large language model generates a coherent, contextually appropriate response to the query based on patterns in its training data.
+
+**2. Retrieval-augmented generation (RAG)**: Many AI search tools also retrieve live web content at query time and incorporate it into the response. This is how tools like Perplexity work—they run a real-time search, pull relevant content, and use the LLM to synthesize a response that cites those sources.
+
+The combination allows AI search engines to give current, sourced answers rather than relying entirely on training data.
+
+## How AI Search Differs from Traditional Search
+
+The key differences:
+
+| Dimension | Traditional Search | AI Search |
+|---|---|---|
+| Output | Ranked list of links | Generated response |
+| User action | Click to read | Read in place |
+| Citations | Implicit (link list) | Explicit (inline citations) |
+| Query format | Keyword-based | Conversational |
+| Personalization | Limited | Higher (context-aware) |
+
+## Why This Matters for Content Strategy
+
+The shift from link-list to generated-answer changes what visibility means. In traditional search, visibility means appearing in the list. In AI search, visibility means being cited in the answer.
+
+Being cited in an AI search response requires a different kind of optimization than ranking in a list. The content needs to be extractable, attributable, and factually precise in ways that traditional SEO-optimized content often isn't.
+
+**Summary:** An AI search engine uses a language model to generate direct answers to queries, rather than returning a list of links. Tools like Perplexity and ChatGPT Search are examples. They work through a combination of language model generation and real-time retrieval.
+
+**Key Points:**
+*   AI search engines generate answers; traditional search engines return link lists.
+*   Most use retrieval-augmented generation (RAG) for current sourcing.
+*   Queries are conversational; outputs are synthesized responses with citations.
+*   Visibility means being cited in the answer, not appearing in a list.
+*   Requires different optimization than traditional SEO.
+
+**Tags:** ai-search, llm-search, perplexity, chatgpt, search-evolution
+
+---
+
+# What Is Retrieval-Augmented Generation (RAG)?
+
+**Author:** Andy Pray  
+**Published:** February 1, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/what-is-retrieval-augmented-generation  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-is-retrieval-augmented-generation.html
+
+Retrieval-Augmented Generation (RAG) is a technique used by AI systems to supplement language model outputs with retrieved external content. It's the mechanism that allows AI tools like Perplexity to give current, sourced answers rather than relying entirely on static training data.
+
+## How RAG Works
+
+The basic RAG pipeline has three steps:
+
+1. **Query processing**: The user's query is processed and used to construct a retrieval request.
+2. **Content retrieval**: The system searches an external corpus—often the live web, a curated knowledge base, or a document store—for content relevant to the query.
+3. **Augmented generation**: The retrieved content is injected into the language model's context, and the model generates a response that incorporates and cites that content.
+
+The result is a generated answer that draws on both the model's trained knowledge and the retrieved content, with the retrieved content providing current, specific, and attributable information.
+
+## Why RAG Matters for AI Search
+
+Without retrieval, AI search tools are limited to their training data. That data has a cutoff date, may lack specificity for niche topics, and can't reflect recent events.
+
+With RAG, AI search tools can:
+- Provide current information
+- Cite specific, traceable sources
+- Give more precise answers to narrow questions
+- Reduce hallucinations by grounding responses in retrieved text
+
+Perplexity, ChatGPT's search mode, Gemini, and similar tools all use some form of RAG.
+
+## What RAG Means for Content Strategy
+
+If a tool is using RAG, your content can potentially be retrieved and cited in real time—even if it's not in the model's training data. This creates a new distribution pathway for content.
+
+But RAG retrieval is selective. The system pulls content that it can evaluate as relevant and credible. Content that is clearly structured, factually precise, and hosted on a credible domain is more likely to be retrieved and used.
+
+This is a core reason why content structure and authority signals matter for GEO. It's not just about training data—it's about what the RAG layer chooses to include in a response.
+
+**Summary:** RAG (Retrieval-Augmented Generation) is the technique AI search tools use to supplement language model outputs with live retrieved content. It allows tools like Perplexity to give current, sourced answers. Content that is well-structured and credibly hosted is more likely to be retrieved and cited.
+
+**Key Points:**
+*   RAG = Retrieval-Augmented Generation.
+*   Combines language model generation with real-time content retrieval.
+*   Used by Perplexity, ChatGPT search, Gemini, and others.
+*   Allows AI tools to cite current, specific sources.
+*   Well-structured, credible content is more likely to be retrieved and cited.
+
+**Tags:** rag, retrieval-augmented-generation, ai-search, perplexity, llm-citations
+
+---
+
+# How Do AI Models Decide What to Cite?
+
+**Author:** Andy Pray  
+**Published:** January 28, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/how-do-ai-models-decide-what-to-cite  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/how-do-ai-models-decide-what-to-cite.html
+
+AI models don't have a simple citation algorithm, but the patterns are consistent enough to work with. Models cite sources that they can evaluate as credible, relevant, and extractable. Understanding how that evaluation works is the foundation of effective GEO.
+
+## What "Citation" Means in AI Search
+
+In AI search systems that use retrieval (like Perplexity), a citation happens when the tool retrieves external content and includes a reference to it in the generated response. The source is pulled at query time and attributed inline.
+
+In models that don't use live retrieval (like base ChatGPT without search), "citation" is more about whether the model's response aligns with or refers to a source that shaped its training. This is less trackable, but the same underlying principles apply—models favor content that was authoritative and clearly structured in their training data.
+
+## The Key Factors
+
+**Relevance**: The content has to actually answer the query. This sounds obvious, but it rules out a lot of content that discusses a topic without directly addressing the specific question.
+
+**Source credibility**: Models develop domain trust. Established publications, official organizational sources, and authors with clear expertise credentials are favored over anonymous or low-credibility sources.
+
+**Content clarity**: Content that provides a direct, extractable answer performs better than content that buries the answer in narrative. The model needs to be able to identify and use the answer efficiently.
+
+**Recency**: For topics where currency matters, newer content tends to be favored, especially in retrieval-augmented systems.
+
+**Structural compatibility**: Headers, bullet points, and logical organization help the model locate and extract relevant information. Unstructured prose is harder to parse and less likely to be cited precisely.
+
+## What This Means for Content Strategy
+
+If you want your content to be cited, it needs to:
+- Answer specific questions directly, not just discuss related topics
+- Be published with clear author attribution and expertise signals
+- Be hosted on a domain the model can evaluate as credible
+- Be structured for extraction, not just for reading
+- Be distributed in or referenced by sources the model treats as authoritative
+
+These are the optimization targets for GEO. They're different from SEO targets, and they require different content decisions.
+
+**Summary:** AI models cite sources based on relevance, source credibility, content clarity, recency, and structural compatibility. The underlying principle is that models favor content they can evaluate as authoritative and extract efficiently. This is what GEO is designed to optimize for.
+
+**Key Points:**
+*   Models cite content that is relevant, credible, clear, recent, and structurally compatible.
+*   Retrieval-augmented systems (like Perplexity) pull content at query time.
+*   Anonymous or low-credibility sources are deprioritized.
+*   Direct, extractable answers perform better than narrative exploration.
+*   These citation factors define the optimization targets for GEO.
+
+**Tags:** ai-citations, llm-citations, geo, content-strategy, source-credibility
+
+---
+
+# Does Publishing on Your Own Website Help with AI Visibility?
+
+**Author:** Andy Pray  
+**Published:** January 24, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/does-publishing-on-your-own-website-help-with-ai-visibility  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/does-publishing-on-your-own-website-help-with-ai-visibility.html
+
+Yes, but with important caveats. Publishing on your own website contributes to AI visibility—but only if your domain has sufficient credibility and your content meets the structural and attribution requirements that AI systems favor.
+
+## What Your Website Can and Can't Do
+
+AI language models are trained on large corpora of web content. If your website has been around for a meaningful amount of time, publishes credible content, and has been referenced by other sources, it has likely contributed to model training in some form.
+
+For retrieval-augmented systems (like Perplexity or ChatGPT with search), your website can be pulled in real time if the content is indexed, relevant, and structured in a way the retrieval system can use.
+
+But there are limits:
+
+- **Domain credibility matters**: A new site, a site with thin content, or a site that hasn't earned links from other credible sources will have less weight in both training data and real-time retrieval.
+- **Content structure matters**: A well-written blog post that doesn't directly answer a specific question may not be retrieved even if it's technically relevant.
+- **The model has to have encountered your content**: For training-based recall, your content needs to be in the training set in a meaningful way.
+
+## How to Maximize Your Own Domain's Contribution
+
+If your primary distribution channel is your own website, there are specific things you can do to improve AI visibility:
+
+1. **Build domain credibility**: Get your content referenced by sources the models trust. This means earning mentions and links from established publications, industry directories, and authoritative sources.
+
+2. **Publish with explicit attribution**: Named authors with visible credentials, clear publication dates, and organizational affiliation.
+
+3. **Structure content for extraction**: Direct answers in the opening, subheadings that mirror user questions, specific factual claims.
+
+4. **Maintain a consistent publishing record**: Consistent, high-quality publishing over time builds the kind of domain track record that models associate with credibility.
+
+5. **Use structured data**: Schema markup helps machines interpret your content's context, authorship, and publication details.
+
+## The Honest Answer
+
+Publishing exclusively on your own website is likely not sufficient for strong AI visibility, especially in competitive categories. The most visible content in AI responses tends to come from sources that have already established significant credibility in their corpora—established publications, reference sites, and sources with extensive inbound references.
+
+Your own website can contribute meaningfully, but it works best as part of a broader distribution strategy.
+
+**Summary:** Publishing on your own website contributes to AI visibility, but only if your domain has sufficient credibility and your content is structured correctly. It works best as part of a broader distribution strategy, not as the primary or only channel.
+
+**Key Points:**
+*   Own-domain publishing contributes to AI visibility but isn't sufficient alone.
+*   Domain credibility, content structure, and attribution all matter.
+*   For retrieval-augmented systems, content needs to be indexed and clearly structured.
+*   Exclusive own-domain publishing is unlikely to be enough in competitive categories.
+*   Works best as part of a multi-channel distribution strategy.
+
+**Tags:** ai-visibility, content-distribution, domain-authority, geo, brand-publishing
+
+---
+
+# What Content Formats Work Best for AI Citations?
+
+**Author:** Andy Pray  
+**Published:** January 20, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/what-content-formats-work-best-for-ai-citations  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-content-formats-work-best-for-ai-citations.html
+
+The content formats that work best for AI citations are formats that make it easy for models to identify, extract, and attribute specific information. That means clear structure, direct answers, and explicit sourcing.
+
+## Formats That Perform Well
+
+**Q&A format**: Content structured as explicit question-and-answer pairs maps directly to how AI systems receive queries. If a user asks "How does X work?" and your content has a section titled "How does X work?" followed by a direct answer, the model can extract and cite that easily.
+
+**How-to guides**: Step-by-step content with numbered lists is structurally easy for models to parse and cite. The sequential format also maps to how users often phrase queries.
+
+**Definition and explainer content**: "What is X?" and "How does X work?" content performs well because it directly matches the question format AI systems receive most often.
+
+**Comparative content**: "X vs. Y" and "What's the difference between X and Y?" formats work well for queries that ask for comparisons.
+
+**Research summaries with citations**: Content that synthesizes research findings and cites primary sources performs well because it gives the model something credible to attribute.
+
+## Formats That Underperform
+
+**Pure narrative**: Long-form content that explores a topic without clear structural markers is harder for models to parse. Even if the content is high quality, the lack of structure reduces citability.
+
+**Opinion without evidence**: Perspective pieces that don't ground claims in verifiable facts are less likely to be cited because there's nothing for the model to attribute.
+
+**Dense technical documentation**: Highly technical content without clear summaries or plain-language explanations may be accurate but inaccessible to models trying to generate consumer-facing responses.
+
+**Landing pages and sales copy**: Content designed to convert rather than inform doesn't get cited. AI models are looking for information, not calls to action.
+
+## What All High-Performing Formats Share
+
+The common thread across formats that perform well:
+- They answer specific questions directly
+- They're organized with clear headings and logical structure
+- They make factual claims that can be attributed and verified
+- They have explicit authorship and sourcing
+
+**Summary:** Content formats that work best for AI citations are those that directly answer questions, use clear structural formatting, and include explicit attribution. Q&A, how-to, definition, and research summary formats consistently outperform narrative and opinion content.
+
+**Key Points:**
+*   Q&A, how-to, definition, and research summary formats perform best.
+*   Structure matters: clear headings, bullet points, logical organization.
+*   Direct answers in the opening outperform buried conclusions.
+*   Opinion without evidence and pure narrative underperform.
+*   Landing pages and sales copy don't get cited.
+
+**Tags:** content-formats, ai-citations, geo, content-strategy, structured-content
+
+---
+
+# What Is an AI Citation?
+
+**Author:** Andy Pray  
+**Published:** January 17, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/what-is-an-ai-citation  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-is-an-ai-citation.html
+
+An AI citation is when an AI model—ChatGPT, Perplexity, Claude, Gemini—references your content in its response to a user query. It's the AI equivalent of a search engine ranking: a signal that the model considers your source credible and relevant enough to attribute.
+
+## What an AI Citation Looks Like
+
+In retrieval-augmented systems like Perplexity, an AI citation appears as an inline reference or footnote linking to the source content. The model generates a response and marks the specific claims or sentences it pulled from external sources with citation numbers.
+
+In non-retrieval contexts—like a standard ChatGPT conversation—citations are less formal. The model might reference a source by name or paraphrase from it without an explicit link. This type of citation is harder to track but still meaningful.
+
+## Why AI Citations Matter
+
+As AI-powered search tools become the first stop for research and discovery, citations in AI responses are becoming a primary visibility channel. A user who asks Perplexity about a topic and sees your content cited is being directed to your brand, your expertise, and your perspective.
+
+In traditional SEO, you optimize to appear in search results. The user still has to choose your link over nine others.
+
+In AI search, being cited means being woven into the answer itself. Your content becomes part of what the AI says.
+
+## How to Earn AI Citations
+
+AI citations aren't arbitrary. They follow patterns:
+
+- **Relevance**: The content has to answer the specific question being asked.
+- **Authority**: The model needs to be able to evaluate your source as credible—through author credentials, domain reputation, and corroboration from other sources.
+- **Clarity**: The answer needs to be clearly stated and easily extractable. Models favor content where the answer is in the first paragraph, not buried three sections down.
+- **Recency**: For time-sensitive topics, newer content is preferred.
+
+## The Bottom Line
+
+Bottom line: An AI citation is attribution from an AI model to your content. It's proof that your content is authoritative enough to be referenced, and it's the primary way users discover sources in AI-powered search.
+
+**Summary:** An AI citation is when an AI model references your content in a generated response. It's the primary visibility signal in AI-powered search, equivalent in importance to a search engine ranking. Earning citations requires relevant, authoritative, clearly structured content.
+
+**Key Points:**
+*   An AI citation is a reference to your content in an AI-generated response.
+*   Appears as inline citations in retrieval tools like Perplexity.
+*   More impactful than a search ranking because it's woven into the answer.
+*   Requires relevance, authority, clarity, and recency.
+*   The primary visibility mechanism in AI-powered search.
+
+**Tags:** ai-citations, geo, ai-visibility, perplexity, llm-citations
+
+---
+
+# What Should I Look for in a GEO Agency?
+
+**Author:** Andy Pray  
+**Published:** October 21, 2025  
+**Canonical URL:** https://wildsignal.agency/blog/what-should-i-look-for-in-a-geo-agency  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/what-should-i-look-for-in-a-geo-agency.html
+
+The GEO agency market is still forming, and the quality gap between practitioners is wide. Some agencies are doing real GEO work—developing proprietary methodologies, building actual measurement systems, and demonstrating results. Others are SEO shops that changed their homepage headline.
+
+Here's how to tell the difference.
+
+## The Non-Negotiables
+
+**Proprietary data on AI citation patterns.** GEO is a data-driven discipline. Any agency worth hiring should have a real answer to "How do you know what makes content citable?" If the answer is "best practices" and "industry knowledge," that's not good enough. You want agencies that have built systems to actually measure what gets cited, by which models, under what conditions.
+
+**Actual expertise in how AI models work.** GEO requires understanding how large language models process and weight information. An agency that treats GEO as content marketing with a new name doesn't understand the technical foundation. Ask them how training data, retrieval mechanisms, and citation weighting actually work. You'll know quickly whether they do.
+
+**A track record of optimizing for citability—not just for SEO.** Results matter. But the right results. An agency that shows you impressions growth in Google Search Console is measuring the wrong thing. Ask to see citation tracking data: how many times client content was cited in AI responses, in which tools, for which queries.
+
+## What to Ask in a Discovery Call
+
+*   How do you measure GEO performance?
+*   What citation tracking tools do you use, and what data do they produce?
+*   Can you show me an example of content you've optimized and how its citation rate changed?
+*   How do you stay current on how different models evaluate sources?
+*   What's your methodology for auditing current AI visibility?
+*   How do you differentiate between GEO and SEO in practice?
+*   Can you give us a shitload of blog posts?
+
+If they can't answer these clearly, keep looking.
+
+## Red Flags
+
+*   **They lead with SEO case studies.** GEO outcomes are different from SEO outcomes. If their portfolio is all rankings and traffic, they may not have GEO expertise.
+*   **No proprietary tooling or data.** If they're relying entirely on publicly available tools, they don't have a proprietary view of citation patterns.
+*   **Vague claims about "AI-ready content."** This phrase means nothing without a methodology behind it.
+*   **No measurement framework.** If they can't tell you how they'll track citation performance, they can't demonstrate results.
+
+## The Bottom Line
+
+GEO is too new for anyone to be a 20-year veteran, but the good agencies have invested in understanding how AI platforms work and built systems to measure and optimize for citations. Don't settle for someone who's just rebranding SEO services.
+
+Look for a GEO agency with proprietary data on AI citation patterns, real expertise in how AI models work, and a track record of optimizing content for citability—not just SEO repackaged as GEO. Ask about their measurement frameworks and whether they actually track citation performance.
+
+Working on AEO strategy? Wild Signal helps brands optimize content for AI citations.
+
+Wild Signal is an AI intelligence firm that builds the maps brands need to navigate the new information economy — then helps them move.
 
 ---
