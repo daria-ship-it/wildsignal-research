@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How AI Handles Conflicting Information — Wild Signal GEO Research Library</title>
+<meta name="description" content="When AI systems encounter conflicting information, they weigh source authority, recency, consensus, and internal consistency. Conflicts create uncertainty, lead...">
+<link rel="canonical" href="https://wildsignal.agency/blog/how-ai-handles-conflicting-information">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="How AI Handles Conflicting Information">
+<meta property="og:description" content="When AI systems encounter conflicting information, they weigh source authority, recency, consensus, and internal consistency. Conflicts create uncertainty, lead...">
+<meta property="og:url" content="https://wildsignal.agency/blog/how-ai-handles-conflicting-information">
+<meta property="og:site_name" content="Wild Signal">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How AI Handles Conflicting Information",
+  "description": "When AI systems encounter conflicting information, they weigh source authority, recency, consensus, and internal consistency. Conflicts create uncertainty, lead...",
+  "author": {
+    "@type": "Person",
+    "name": "Daria Dubois"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wild Signal",
+    "url": "https://wildsignal.agency"
+  },
+  "datePublished": "January 6, 2026",
+  "url": "https://wildsignal.agency/blog/how-ai-handles-conflicting-information",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wild Signal GEO Research Library",
+    "url": "https://daria-ship-it.github.io/wildsignal-research"
+  }
+}
+</script>
+
+<!-- AI discoverability -->
+<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/plain" href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">
+
+<style>
+/* Wild Signal GEO Research Hub — base styles */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-accent: #1d4ed8;
+  --color-border: #e5e7eb;
+  --color-tag: #f3f4f6;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 4px;
+  --max-prose: 720px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Site header ── */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 24px;
+  background: var(--color-surface);
+}
+.site-header .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.site-header .logo {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+.site-header .logo span { color: var(--color-accent); }
+.site-header nav { margin-left: auto; font-size: 14px; }
+.site-header nav a { color: var(--color-muted); margin-left: 20px; }
+.site-header nav a:hover { color: var(--color-text); text-decoration: none; }
+
+/* ── Layout wrappers ── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.prose {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Index page ── */
+.index-hero {
+  padding: 56px 24px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.index-hero h1 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+.index-hero p {
+  color: var(--color-muted);
+  font-size: 15px;
+  max-width: 640px;
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+.index-hero .external-link {
+  display: inline-block;
+  font-size: 13px;
+  background: var(--color-tag);
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+.index-hero .external-link:hover { background: var(--color-border); text-decoration: none; }
+
+.stats-bar {
+  display: flex;
+  gap: 32px;
+  padding: 16px 0 32px;
+  font-size: 13px;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 40px;
+}
+.stats-bar strong { color: var(--color-text); font-weight: 600; }
+
+.category-section {
+  max-width: 1100px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+.category-section h2 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-list { list-style: none; margin: 0; padding: 0; }
+.article-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 24px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.article-item:last-child { border-bottom: none; }
+.article-item-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+.article-item-title a { color: inherit; }
+.article-item-title a:hover { color: var(--color-accent); text-decoration: none; }
+.article-item-desc {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.article-item-meta {
+  font-size: 12px;
+  color: var(--color-muted);
+  white-space: nowrap;
+  text-align: right;
+  padding-top: 2px;
+}
+
+/* ── Article page ── */
+.article-header {
+  padding: 48px 24px 32px;
+  max-width: var(--max-prose);
+  margin: 0 auto;
+}
+.article-header h1 {
+  font-size: clamp(20px, 3.5vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+.article-meta strong { color: var(--color-text); font-weight: 500; }
+.original-link {
+  display: inline-block;
+  font-size: 12px;
+  background: var(--color-tag);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: var(--color-muted);
+  margin-top: 10px;
+}
+.original-link:hover { background: var(--color-border); text-decoration: none; }
+
+/* Article content */
+.article-body { padding-bottom: 64px; }
+.article-body h2 { font-size: 19px; font-weight: 700; margin: 2em 0 0.6em; letter-spacing: -0.01em; }
+.article-body h3 { font-size: 16px; font-weight: 700; margin: 1.6em 0 0.5em; }
+.article-body h4 { font-size: 15px; font-weight: 600; margin: 1.4em 0 0.4em; color: var(--color-muted); }
+.article-body p { margin: 0 0 1.2em; }
+.article-body ul, .article-body ol { padding-left: 1.6em; margin: 0 0 1.2em; }
+.article-body li { margin-bottom: 0.4em; }
+.article-body code { font-size: 13px; background: var(--color-tag); padding: 1px 5px; border-radius: 3px; font-family: 'SF Mono', 'Fira Code', monospace; }
+.article-body strong { font-weight: 600; }
+.article-body hr { border: none; border-top: 1px solid var(--color-border); margin: 2em 0; }
+.article-body blockquote { border-left: 3px solid var(--color-border); margin: 0 0 1.2em; padding-left: 1em; color: var(--color-muted); }
+
+.back-link { font-size: 13px; color: var(--color-muted); display: block; margin-bottom: 24px; }
+.back-link:hover { color: var(--color-text); text-decoration: none; }
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 24px;
+  font-size: 12px;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 32px;
+}
+.site-footer a { color: var(--color-muted); }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .article-item { grid-template-columns: 1fr; }
+  .article-item-meta { text-align: left; }
+  .stats-bar { gap: 16px; flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <span class="logo">Wild Signal <span>Research Library</span></span>
+    <nav>
+      <a href="../index.html">All Articles</a>
+      <a href="https://wildsignal.agency" rel="noopener">wildsignal.agency</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="article-header">
+    <a href="../index.html" class="back-link">← Back to Research Library</a>
+    <h1>How AI Handles Conflicting Information</h1>
+    <div class="article-meta">
+      <span>By <strong>Daria Dubois</strong></span>
+      <span>January 6, 2026</span>
+    </div>
+    <a href="https://wildsignal.agency/blog/how-ai-handles-conflicting-information" class="original-link" rel="noopener">
+      Originally published at Wild Signal — wildsignal.agency ↗
+    </a>
+  </div>
+
+  <article class="prose article-body">
+    <p>When AI systems encounter conflicting information, they weigh source authority, recency, consensus, and internal consistency. Conflicts create uncertainty, leading to hedged answers, omissions, or avoidance. Consistent messaging is how you win the arbitration AI performs every time it generates an answer.</p>
+
+<p>AI systems weigh source authority, recency, consensus, and consistency when resolving conflicting information.</p>
+
+<h3>How do AI systems resolve conflicting information?</h3>
+
+<p>AI systems implicitly rank sources by trustworthiness. Established publications, academic sources, and official documentation carry more weight than anonymous forums or outdated blogs. When sources conflict, the more authoritative source typically wins.</p>
+
+<h3>How does recency affect AI conflict resolution?</h3>
+
+<p>For time-sensitive information, AI systems often favor recent sources. If older content says one thing and newer content says another, newer information may be weighted more heavily—assuming the source is credible.</p>
+
+<h3>What happens when AI cannot resolve conflicts?</h3>
+
+<p>Uncertainty manifests as hedged language ('Some sources suggest...'), presenting multiple perspectives without endorsing one, omitting the topic entirely, or defaulting to a competitor with clearer positioning.</p>
+
+<h3>How do brands create their own conflicts?</h3>
+
+<p>Brands often create internal conflicts when marketing says one thing, PR says another, the website says something else, and customer reviews contradict all three. If your own sources conflict, AI cannot confidently represent you.</p>
+
+<h3>The Bottom Line</h3>
+
+<p>This is part of the new landscape where AI systems mediate information discovery. Brands that understand these dynamics can position themselves strategically.</p>
+
+<p>Working on GEO strategy? Wild Signal helps brands optimize content for the citation economy.</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>Originally published at <a href="https://wildsignal.agency/blog/how-ai-handles-conflicting-information" rel="noopener">wildsignal.agency</a> · 
+  Part of the <a href="https://daria-ship-it.github.io/wildsignal-research/index.html">Wild Signal GEO Research Library</a> · 
+  <a href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">llms.txt</a></p>
+</footer>
+
+</body>
+</html>
