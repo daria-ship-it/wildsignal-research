@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Struggling to Appear in LLM Responses? Here&#x27;s What to Do. — Wild Signal GEO Research Library</title>
+<meta name="description" content="Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you do...">
+<link rel="canonical" href="https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Struggling to Appear in LLM Responses? Here&#x27;s What to Do.">
+<meta property="og:description" content="Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you do...">
+<meta property="og:url" content="https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do">
+<meta property="og:site_name" content="Wild Signal">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Struggling to Appear in LLM Responses? Here's What to Do.",
+  "description": "Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you do...",
+  "author": {
+    "@type": "Person",
+    "name": "Andy Pray"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wild Signal",
+    "url": "https://wildsignal.agency"
+  },
+  "datePublished": "February 27, 2026",
+  "url": "https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wild Signal GEO Research Library",
+    "url": "https://daria-ship-it.github.io/wildsignal-research"
+  }
+}
+</script>
+
+<!-- AI discoverability -->
+<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/plain" href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">
+
+<style>
+/* Wild Signal GEO Research Hub — base styles */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-accent: #1d4ed8;
+  --color-border: #e5e7eb;
+  --color-tag: #f3f4f6;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 4px;
+  --max-prose: 720px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Site header ── */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 24px;
+  background: var(--color-surface);
+}
+.site-header .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.site-header .logo {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+.site-header .logo span { color: var(--color-accent); }
+.site-header nav { margin-left: auto; font-size: 14px; }
+.site-header nav a { color: var(--color-muted); margin-left: 20px; }
+.site-header nav a:hover { color: var(--color-text); text-decoration: none; }
+
+/* ── Layout wrappers ── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.prose {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Index page ── */
+.index-hero {
+  padding: 56px 24px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.index-hero h1 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+.index-hero p {
+  color: var(--color-muted);
+  font-size: 15px;
+  max-width: 640px;
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+.index-hero .external-link {
+  display: inline-block;
+  font-size: 13px;
+  background: var(--color-tag);
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+.index-hero .external-link:hover { background: var(--color-border); text-decoration: none; }
+
+.stats-bar {
+  display: flex;
+  gap: 32px;
+  padding: 16px 0 32px;
+  font-size: 13px;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 40px;
+}
+.stats-bar strong { color: var(--color-text); font-weight: 600; }
+
+.category-section {
+  max-width: 1100px;
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+.category-section h2 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-list { list-style: none; margin: 0; padding: 0; }
+.article-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 24px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.article-item:last-child { border-bottom: none; }
+.article-item-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+.article-item-title a { color: inherit; }
+.article-item-title a:hover { color: var(--color-accent); text-decoration: none; }
+.article-item-desc {
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.article-item-meta {
+  font-size: 12px;
+  color: var(--color-muted);
+  white-space: nowrap;
+  text-align: right;
+  padding-top: 2px;
+}
+
+/* ── Article page ── */
+.article-header {
+  padding: 48px 24px 32px;
+  max-width: var(--max-prose);
+  margin: 0 auto;
+}
+.article-header h1 {
+  font-size: clamp(20px, 3.5vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+.article-meta strong { color: var(--color-text); font-weight: 500; }
+.original-link {
+  display: inline-block;
+  font-size: 12px;
+  background: var(--color-tag);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: var(--color-muted);
+  margin-top: 10px;
+}
+.original-link:hover { background: var(--color-border); text-decoration: none; }
+
+/* Article content */
+.article-body { padding-bottom: 64px; }
+.article-body h2 { font-size: 19px; font-weight: 700; margin: 2em 0 0.6em; letter-spacing: -0.01em; }
+.article-body h3 { font-size: 16px; font-weight: 700; margin: 1.6em 0 0.5em; }
+.article-body h4 { font-size: 15px; font-weight: 600; margin: 1.4em 0 0.4em; color: var(--color-muted); }
+.article-body p { margin: 0 0 1.2em; }
+.article-body ul, .article-body ol { padding-left: 1.6em; margin: 0 0 1.2em; }
+.article-body li { margin-bottom: 0.4em; }
+.article-body code { font-size: 13px; background: var(--color-tag); padding: 1px 5px; border-radius: 3px; font-family: 'SF Mono', 'Fira Code', monospace; }
+.article-body strong { font-weight: 600; }
+.article-body hr { border: none; border-top: 1px solid var(--color-border); margin: 2em 0; }
+.article-body blockquote { border-left: 3px solid var(--color-border); margin: 0 0 1.2em; padding-left: 1em; color: var(--color-muted); }
+
+.back-link { font-size: 13px; color: var(--color-muted); display: block; margin-bottom: 24px; }
+.back-link:hover { color: var(--color-text); text-decoration: none; }
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 24px;
+  font-size: 12px;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 32px;
+}
+.site-footer a { color: var(--color-muted); }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .article-item { grid-template-columns: 1fr; }
+  .article-item-meta { text-align: left; }
+  .stats-bar { gap: 16px; flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <span class="logo">Wild Signal <span>Research Library</span></span>
+    <nav>
+      <a href="../index.html">All Articles</a>
+      <a href="https://wildsignal.agency" rel="noopener">wildsignal.agency</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="article-header">
+    <a href="../index.html" class="back-link">← Back to Research Library</a>
+    <h1>Struggling to Appear in LLM Responses? Here&#x27;s What to Do.</h1>
+    <div class="article-meta">
+      <span>By <strong>Andy Pray</strong></span>
+      <span>February 27, 2026</span>
+    </div>
+    <a href="https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do" class="original-link" rel="noopener">
+      Originally published at Wild Signal — wildsignal.agency ↗
+    </a>
+  </div>
+
+  <article class="prose article-body">
+    <p>Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you don't show up. Or worse, your competitors do.</p>
+
+<p>That gap between your search presence and your AI presence is where most brands are stuck right now. And it's not because their content is bad. It's because AI systems find, evaluate, and surface information differently than search engines do.</p>
+
+<h3>Why Traditional Content Doesn't Automatically Transfer</h3>
+
+<p>Google indexes pages. LLMs interpret sources. The distinction sounds minor, but it changes what content needs to look like and where it needs to live.</p>
+
+<p>A page that ranks well on Google might be structured around keyword density, internal linking, and metadata. An LLM doesn't care about any of that. It cares about whether your content provides a clear, direct, factual answer to the kind of question a user would ask in a conversational prompt. It cares whether your claims are supported by signals the model considers authoritative. And it cares whether the information is structured in a way that's easy to extract and attribute.</p>
+
+<p>Most branded content fails on at least one of those criteria. Not because of quality, but because it was built for a different system.</p>
+
+<h3>The Three Reasons Your Brand Isn't Showing Up</h3>
+
+<ol>
+<li>Your content answers the wrong questions.</li>
+</ol>
+<p>LLM users ask category-level questions, not branded ones. "What's the best project management tool for small teams?" not "Tell me about [Your Brand]." If your content library is built around product pages and feature comparisons using your own terminology, it's answering questions nobody is asking in an AI interface.</p>
+
+<p>The fix is straightforward but requires discipline. Map the actual prompts users are entering in ChatGPT, Perplexity, and Claude for your category. Then build content that answers those prompts directly, with the kind of specificity and structure that makes it easy for an AI to extract and cite.</p>
+
+<ol>
+<li>Your authority signals don't register with AI systems.</li>
+</ol>
+<p>Google uses backlinks as a proxy for authority. LLMs use a different, more distributed set of signals. Are you mentioned in Reddit threads, cited in industry publications, referenced in forums, quoted in news coverage? These third-party mentions create the trust layer that AI models rely on when deciding which sources to recommend.</p>
+
+<p>A brand with 50 high-quality backlinks and zero Reddit presence might rank well on Google and be invisible to Perplexity. The authority signals don't transfer one-to-one between systems.</p>
+
+<ol>
+<li>Your content is structured for humans browsing, not AI extracting.</li>
+</ol>
+<p>When an LLM generates a response about your category, it's pulling from sources and synthesizing an answer. It's not sending a user to your page. It's extracting information from your content, evaluating it against other sources, and deciding whether to include it in its response.</p>
+
+<p>Content that buries answers three clicks deep, wraps key information in marketing language, or spreads a single factual claim across multiple paragraphs is hard for AI to extract cleanly. Content with clear headings, direct statements, and structured data is easy to extract and more likely to be cited.</p>
+
+<h3>What Actually Moves the Needle</h3>
+
+<p>The work that gets brands into LLM responses is specific and measurable. It's not a rebrand. It's not a full content overhaul. It's a targeted set of interventions based on how AI systems actually source and surface information.</p>
+
+<p>Audit your current AI presence. Before changing anything, understand where you stand. How do ChatGPT, Claude, Perplexity, and Gemini describe your brand today? What do they recommend when users ask about your category without naming your brand? Where do competitors appear and you don't? The gaps tell you exactly where to focus.</p>
+
+<p>Build content for the prompts that matter. Identify the 20-30 category-level prompts that drive discovery in your space. Create content that answers those prompts directly, with factual claims, specific data, and clear structure. This isn't keyword stuffing for AI. It's producing genuinely useful answers to questions your customers are already asking in conversational interfaces.</p>
+
+<p>Strengthen your third-party citation network. AI models trust third-party mentions more than self-published claims. Earned media placements, expert community participation, review site presence, and industry publication citations all feed the authority signals that LLMs use to decide who gets recommended. This is where PR, earned media, and community strategy become GEO strategies.</p>
+
+<p>Structure for extraction. Use clear headings that mirror natural language questions. Lead with direct answers, then support with evidence. Include specific data points that an AI can attribute. Implement structured data (schema markup, FAQ sections, clear entity definitions) that makes your content machine-readable without sacrificing human readability.</p>
+
+<p>Track the right metrics. Organic website traffic doesn't capture AI-mediated discovery. Citation rate across AI platforms, mention frequency in category prompts, sentiment and positioning in AI-generated recommendations — these are the metrics that tell you whether the work is landing.</p>
+
+<h3>The Compounding Problem</h3>
+
+<p>AI visibility compounds. Models that cite your content today are more likely to cite it tomorrow. As your authority signals build across third-party sources, your citation rate increases, which reinforces the authority signal. Brands that start building this presence now are establishing an advantage that gets harder for competitors to close over time.</p>
+
+<p>The inverse is also true. Every month a brand remains absent from AI responses is a month where competitors are building the citation history and authority signals that make their position stronger. The gap widens in both directions.</p>
+
+<h3>Where Wild Signal Fits</h3>
+
+<p>This is what we do. Wild Signal's Wayfinder diagnostic maps exactly where your brand appears — and doesn't — across ChatGPT, Perplexity, Claude, Gemini, and Grok. We identify the specific prompts, categories, and competitive gaps where your AI visibility is falling short. Then we build the strategy to close those gaps: content architecture, citation network development, authority signal building, and ongoing measurement.</p>
+
+<p>We don't guess at what might work. We measure what's actually happening across AI platforms and build recommendations from the data.</p>
+
+<p>Get in touch to find out where your brand stands in AI search today.</p>
+
+<p>Wild Signal is an AI intelligence firm that builds the maps brands need to navigate the new information economy — then helps them move.</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>Originally published at <a href="https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do" rel="noopener">wildsignal.agency</a> · 
+  Part of the <a href="https://daria-ship-it.github.io/wildsignal-research/index.html">Wild Signal GEO Research Library</a> · 
+  <a href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">llms.txt</a></p>
+</footer>
+
+</body>
+</html>
