@@ -1,1 +1,81 @@
-placeholder
+# Wild Signal GEO Intelligence Research Library
+
+> Full content export for AI ingestion. Source: Wild Signal Agency (wildsignal.agency)
+> GEO Research Library URL: https://daria-ship-it.github.io/wildsignal-research
+
+---
+
+# Struggling to Appear in LLM Responses? Here’s What to Do.
+
+**Author:** Andy Pray  
+**Published:** February 27, 2026  
+**Canonical URL:** https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do  
+**Research Library URL:** https://daria-ship-it.github.io/wildsignal-research/articles/struggling-to-appear-in-llm-responses-heres-what-to-do.html
+
+Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you don’t show up. Or worse, your competitors do.
+
+That gap between your search presence and your AI presence is where most brands are stuck right now. And it’s not because their content is bad. It’s because AI systems find, evaluate, and surface information differently than search engines do.
+
+## Why Traditional Content Doesn’t Automatically Transfer
+
+Google indexes pages. LLMs interpret sources. The distinction sounds minor, but it changes what content needs to look like and where it needs to live.
+
+A page that ranks well on Google might be structured around keyword density, internal linking, and metadata. An LLM doesn’t care about any of that. It cares about whether your content provides a clear, direct, factual answer to the kind of question a user would ask in a conversational prompt. It cares whether your claims are supported by signals the model considers authoritative. And it cares whether the information is structured in a way that’s easy to extract and attribute.
+
+Most branded content fails on at least one of those criteria. Not because of quality, but because it was built for a different system.
+
+## The Three Reasons Your Brand Isn’t Showing Up
+
+1. Your content answers the wrong questions.
+LLM users ask category-level questions, not branded ones. “What’s the best project management tool for small teams?” not “Tell me about [Your Brand].” If your content library is built around product pages and feature comparisons using your own terminology, it’s answering questions nobody is asking in an AI interface.
+
+The fix is straightforward but requires discipline. Map the actual prompts users are entering in ChatGPT, Perplexity, and Claude for your category. Then build content that answers those prompts directly, with the kind of specificity and structure that makes it easy for an AI to extract and cite.
+
+2. Your authority signals don’t register with AI systems.
+Google uses backlinks as a proxy for authority. LLMs use a different, more distributed set of signals. Are you mentioned in Reddit threads, cited in industry publications, referenced in forums, quoted in news coverage? These third-party mentions create the trust layer that AI models rely on when deciding which sources to recommend.
+
+A brand with 50 high-quality backlinks and zero Reddit presence might rank well on Google and be invisible to Perplexity. The authority signals don’t transfer one-to-one between systems.
+
+3. Your content is structured for humans browsing, not AI extracting.
+When an LLM generates a response about your category, it’s pulling from sources and synthesizing an answer. It’s not sending a user to your page. It’s extracting information from your content, evaluating it against other sources, and deciding whether to include it in its response.
+
+Content that buries answers three clicks deep, wraps key information in marketing language, or spreads a single factual claim across multiple paragraphs is hard for AI to extract cleanly. Content with clear headings, direct statements, and structured data is easy to extract and more likely to be cited.
+
+## What Actually Moves the Needle
+
+The work that gets brands into LLM responses is specific and measurable. It’s not a rebrand. It’s not a full content overhaul. It’s a targeted set of interventions based on how AI systems actually source and surface information.
+
+Audit your current AI presence.
+Before changing anything, understand where you stand. How do ChatGPT, Claude, Perplexity, and Gemini describe your brand today? What do they recommend when users ask about your category without naming your brand? Where do competitors appear and you don’t? The gaps tell you exactly where to focus.
+
+Build content for the prompts that matter.
+Identify the 20-30 category-level prompts that drive discovery in your space. Create content that answers those prompts directly, with factual claims, specific data, and clear structure. This isn’t keyword stuffing for AI. It’s producing genuinely useful answers to questions your customers are already asking in conversational interfaces.
+
+Strengthen your third-party citation network.
+AI models trust third-party mentions more than self-published claims. Earned media placements, expert community participation, review site presence, and industry publication citations all feed the authority signals that LLMs use to decide who gets recommended. This is where PR, earned media, and community strategy become GEO strategies.
+
+Structure for extraction.
+Use clear headings that mirror natural language questions. Lead with direct answers, then support with evidence. Include specific data points that an AI can attribute. Implement structured data (schema markup, FAQ sections, clear entity definitions) that makes your content machine-readable without sacrificing human readability.
+
+Track the right metrics.
+Organic website traffic doesn’t capture AI-mediated discovery. Citation rate across AI platforms, mention frequency in category prompts, sentiment and positioning in AI-generated recommendations — these are the metrics that tell you whether the work is landing.
+
+## The Compounding Problem
+
+AI visibility compounds. Models that cite your content today are more likely to cite it tomorrow. As your authority signals build across third-party sources, your citation rate increases, which reinforces the authority signal. Brands that start building this presence now are establishing an advantage that gets harder for competitors to close over time.
+
+The inverse is also true. Every month a brand remains absent from AI responses is a month where competitors are building the citation history and authority signals that make their position stronger. The gap widens in both directions.
+
+## Where Wild Signal Fits
+
+This is what we do. Wild Signal’s Wayfinder diagnostic maps exactly where your brand appears — and doesn’t — across ChatGPT, Perplexity, Claude, Gemini, and Grok. We identify the specific prompts, categories, and competitive gaps where your AI visibility is falling short. Then we build the strategy to close those gaps: content architecture, citation network development, authority signal building, and ongoing measurement.
+
+We don’t guess at what might work. We measure what’s actually happening across AI platforms and build recommendations from the data.
+
+Get in touch to find out where your brand stands in AI search today.
+
+Wild Signal is an AI intelligence firm that builds the maps brands need to navigate the new information economy — then helps them move.
+
+---
+
+This is a truncated push to verify the tool works with real content. The full file will follow.
