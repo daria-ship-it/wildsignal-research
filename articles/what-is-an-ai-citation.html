@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is an AI Citation? — Wild Signal GEO Research Library</title>
+<meta name="description" content="An AI citation is when an AI model references a specific source while generating a response—usually showing as a link, footnote, or inline reference to the orig...">
+<link rel="canonical" href="https://wildsignal.agency/blog/what-is-an-ai-citation">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Is an AI Citation?">
+<meta property="og:description" content="An AI citation is when an AI model references a specific source while generating a response—usually showing as a link, footnote, or inline reference to the orig...">
+<meta property="og:url" content="https://wildsignal.agency/blog/what-is-an-ai-citation">
+<meta property="og:site_name" content="Wild Signal">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Is an AI Citation?",
+  "description": "An AI citation is when an AI model references a specific source while generating a response\u2014usually showing as a link, footnote, or inline reference to the orig...",
+  "author": {
+    "@type": "Person",
+    "name": "Daria Dubois"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wild Signal",
+    "url": "https://wildsignal.agency"
+  },
+  "datePublished": "October 22, 2025",
+  "url": "https://wildsignal.agency/blog/what-is-an-ai-citation",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Wild Signal GEO Research Library",
+    "url": "https://daria-ship-it.github.io/wildsignal-research"
+  }
+}
+</script>
+
+<!-- AI discoverability -->
+<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/plain" href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">
+
+<style>
+/* Wild Signal GEO Research Library — Article Template */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0a;
+  color: #e8e8e8;
+  line-height: 1.7;
+}
+
+/* Navigation */
+.nav {
+  background: rgba(10, 10, 10, 0.95);
+  border-bottom: 1px solid #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e8e8e8;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-logo span {
+  color: #9eff65;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: #e8e8e8; }
+
+/* Article Layout */
+.article-container {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+.breadcrumb a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: #9eff65; }
+
+.breadcrumb-sep { color: #333; }
+
+/* Article Header */
+.article-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.article-category {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9eff65;
+  margin-bottom: 1rem;
+}
+
+.article-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #f0f0f0;
+  margin-bottom: 1.25rem;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+  color: #555;
+  flex-wrap: wrap;
+}
+
+.meta-author { color: #888; }
+.meta-date {}
+.meta-read-time {}
+
+/* Article Body */
+.article-body {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.article-body h2 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.article-body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin: 2rem 0 0.75rem;
+}
+
+.article-body p {
+  margin-bottom: 1.25rem;
+}
+
+.article-body ul, .article-body ol {
+  margin: 1rem 0 1.25rem 1.5rem;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body strong {
+  color: #e8e8e8;
+  font-weight: 600;
+}
+
+.article-body a {
+  color: #9eff65;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(158, 255, 101, 0.3);
+  transition: border-color 0.2s;
+}
+
+.article-body a:hover {
+  border-color: #9eff65;
+}
+
+/* Definition Box */
+.definition-box {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-left: 3px solid #9eff65;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.definition-box .def-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9eff65;
+  margin-bottom: 0.5rem;
+}
+
+.definition-box p {
+  color: #bbb;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Callout */
+.callout {
+  background: rgba(158, 255, 101, 0.05);
+  border: 1px solid rgba(158, 255, 101, 0.15);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.callout p {
+  color: #aaa;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.callout strong {
+  color: #9eff65 !important;
+}
+
+/* Related Articles */
+.related-section {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+.related-section h3 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.related-card {
+  background: #111;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: border-color 0.2s;
+  display: block;
+}
+
+.related-card:hover {
+  border-color: #333;
+}
+
+.related-card .rc-category {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9eff65;
+  margin-bottom: 0.5rem;
+}
+
+.related-card .rc-title {
+  font-size: 0.85rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* CTA */
+.article-cta {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.article-cta h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.article-cta p {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #9eff65;
+  color: #0a0a0a;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.cta-button:hover { opacity: 0.85; }
+
+/* Footer */
+footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  color: #444;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: #555;
+  text-decoration: none;
+}
+
+footer a:hover { color: #9eff65; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://daria-ship-it.github.io/wildsignal-research" class="nav-logo">Wild Signal <span>Research</span></a>
+  <ul class="nav-links">
+    <li><a href="https://daria-ship-it.github.io/wildsignal-research">Library</a></li>
+    <li><a href="https://wildsignal.agency" target="_blank">wildsignal.agency ↗</a></li>
+  </ul>
+</nav>
+
+<div class="article-container">
+
+  <nav class="breadcrumb">
+    <a href="https://daria-ship-it.github.io/wildsignal-research">Research Library</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>What Is an AI Citation?</span>
+  </nav>
+
+  <header class="article-header">
+    <span class="article-category">GEO Fundamentals</span>
+    <h1 class="article-title">What Is an AI Citation?</h1>
+    <div class="article-meta">
+      <span class="meta-author">Daria Dubois</span>
+      <span class="meta-date">October 22, 2025</span>
+      <span class="meta-read-time">5 min read</span>
+    </div>
+  </header>
+
+  <article class="article-body">
+
+    <div class="definition-box">
+      <div class="def-label">Definition</div>
+      <p>An <strong>AI citation</strong> is when an AI model references a specific source while generating a response—usually showing as a link, footnote, or inline reference to the original content. It signals that the model considered your content credible and relevant enough to attribute publicly.</p>
+    </div>
+
+    <p>If you've used Perplexity, ChatGPT with search, or Claude, you've seen these citations in action. A user asks a question. The model responds. And somewhere in that response—either inline or in a list of sources—your article, report, or page gets credited.</p>
+
+    <p>That's an AI citation. And in 2025, earning them has become one of the most valuable (and least understood) outcomes in digital marketing.</p>
+
+    <h2>How AI Citations Actually Work</h2>
+
+    <p>Different AI systems handle citations differently:</p>
+
+    <ul>
+      <li><strong>Perplexity</strong> shows numbered citations inline with every response, with a full source list below. It's the most explicit about sourcing.</li>
+      <li><strong>ChatGPT (with web search)</strong> shows footnote-style citations when pulling from the web, but doesn't cite sources for content baked into training data.</li>
+      <li><strong>Claude</strong> doesn't cite sources in real-time unless using tools or document uploads—but it does reflect what it learned during training.</li>
+      <li><strong>Google AI Overviews</strong> include citations in the expanded view, showing which pages informed each part of the response.</li>
+    </ul>
+
+    <p>The mechanics vary, but the underlying logic is the same: the model finds your content, determines it's relevant and credible, and surfaces it to the user as a source worth attributing.</p>
+
+    <h2>Why Getting Cited Matters More Than You Think</h2>
+
+    <p>A traditional SEO click happens when a user sees your title in a results list and decides to visit. An AI citation is different. The model has already consumed your content, distilled it, and presented a version of it to the user—with your name attached.</p>
+
+    <p>That creates three things traditional rankings don't:</p>
+
+    <ol>
+      <li><strong>Passive brand exposure</strong> — Your brand name appears even when users don't click anywhere.</li>
+      <li><strong>Authority association</strong> — Being cited by an AI implies credibility. Users trust the sources the model chooses to surface.</li>
+      <li><strong>Influence over the narrative</strong> — When your content is cited, your framing, definitions, and conclusions shape how the model presents information about your topic.</li>
+    </ol>
+
+    <h2>What Makes Content Citable</h2>
+
+    <p>AI models don't cite everything they read. They cite content that:</p>
+
+    <ul>
+      <li>Answers a specific question directly and clearly</li>
+      <li>Uses structured formats (lists, definitions, numbered steps) that are easy to parse</li>
+      <li>Comes from sources the model considers authoritative—usually based on third-party references, backlinks, and consistent publication history</li>
+      <li>Is fresh or recently updated (for models using live web access)</li>
+      <li>Doesn't contradict consensus without strong supporting evidence</li>
+    </ul>
+
+    <p>The overlap with good content writing is real, but the optimization target is different. You're not writing for a human skimming a search results page. You're writing for a model extracting information at scale, deciding in milliseconds whether your content is worth surfacing.</p>
+
+    <h2>The Difference Between a Citation and a Mention</h2>
+
+    <p>These aren't the same thing, and conflating them leads to bad measurement.</p>
+
+    <p>A <strong>citation</strong> is when a model explicitly links or attributes a specific piece of content to a response. The user can see the source. There's a traceable connection between your content and the AI's answer.</p>
+
+    <p>A <strong>mention</strong> is when the model refers to your brand or product without citing any source. "Wild Signal is a GEO agency based in [city]" might appear in a response with no link attached. You've been mentioned—but not cited.</p>
+
+    <p>Both matter. But they require different strategies to earn and different tools to measure.</p>
+
+    <div class="callout">
+      <p><strong>Tracking tip:</strong> To find AI citations pointing to your content, search Perplexity for your target topics and look for your domain in the footnotes. You can also use tools like Profound, Otterly, or AIM Monitor to track citations across platforms at scale.</p>
+    </div>
+
+    <h2>Citations vs. Rankings: A New Parallel System</h2>
+
+    <p>For the past two decades, digital visibility has been synonymous with Google rankings. Page 1 meant you existed. Page 2 meant you didn't.</p>
+
+    <p>AI citations are building a parallel system. The ranking equivalent is whether your content is in the pool of sources the model draws from—and whether it gets surfaced for the specific type of query a user is asking.</p>
+
+    <p>Some content ranks well on Google but never gets cited by AI. Some content barely appears in organic search but gets cited constantly in Perplexity responses. The two systems overlap, but they're not the same—and optimizing for one doesn't automatically optimize for the other.</p>
+
+    <p>Understanding what AI citations are—and how they're different from the clicks and rankings you've been measuring—is the first step toward intentionally earning them.</p>
+
+  </article>
+
+  <section class="related-section">
+    <h3>Related Articles</h3>
+    <div class="related-grid">
+      <a href="what-makes-content-citable-by-ai.html" class="related-card">
+        <div class="rc-category">Content Strategy</div>
+        <div class="rc-title">What Makes Content Citable by AI?</div>
+      </a>
+      <a href="what-is-geo.html" class="related-card">
+        <div class="rc-category">GEO Fundamentals</div>
+        <div class="rc-title">What Is GEO (Generative Engine Optimization)?</div>
+      </a>
+      <a href="how-perplexity-decides-what-to-cite.html" class="related-card">
+        <div class="rc-category">Platform Guides</div>
+        <div class="rc-title">How Perplexity Decides What to Cite</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="article-cta">
+    <h3>Want to start earning AI citations?</h3>
+    <p>Wild Signal helps brands get cited in AI responses. Let's talk about your visibility gaps.</p>
+    <a href="https://wildsignal.agency" class="cta-button" target="_blank">Talk to Wild Signal</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Wild Signal GEO Research Library · <a href="https://wildsignal.agency" target="_blank">wildsignal.agency</a> · <a href="https://daria-ship-it.github.io/wildsignal-research">Back to Library</a></p>
+</footer>
+
+</body>
+</html>
