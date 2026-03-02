@@ -1,0 +1,374 @@
+{
+  "feed_type": "export",
+  "metadata": {
+    "title": "Wild Signal GEO Research Library",
+    "origin": "https://daria-ship-it.github.io/wildsignal-research",
+    "description": "AI search visibility research and field guides from Wild Signal Agency",
+    "generated_at": "2026-03-02T19:00:00Z"
+  },
+  "content_type": "compiled-export",
+  "data": {
+    "contents": [
+      {
+        "format": "text/markdown",
+        "title": "Struggling to Appear in LLM Responses? Here's What to Do.",
+        "description": "Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you do...",
+        "author": "Andy Pray",
+        "date_published": "February 27, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/struggling-to-appear-in-llm-responses-heres-what-to-do.html",
+        "canonical_url": "https://wildsignal.agency/blog/struggling-to-appear-in-llm-responses-heres-what-to-do"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Is WebMCP and How Do You Make Your Website AI-Agent Ready?",
+        "description": "WebMCP (Web Model Context Protocol) is a new Google standard that lets websites expose their capabilities \u2014 forms, content, data \u2014 directly to AI agents as stru...",
+        "author": "Andy Pray",
+        "date_published": "February 15, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/webmcp-the-agentic-web-and-why-geo-just-got-a-new-front-door.html",
+        "canonical_url": "https://wildsignal.agency/blog/webmcp-the-agentic-web-and-why-geo-just-got-a-new-front-door"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How AI Handles Conflicting Information",
+        "description": "When AI systems encounter conflicting information, they weigh source authority, recency, consensus, and internal consistency. Conflicts create uncertainty, lead...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-ai-handles-conflicting-information.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-ai-handles-conflicting-information"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Do FAQs Help With AI Visibility?",
+        "description": "FAQs can help with AI visibility\u2014but only if done well. AI systems respond to question-answer formats because that mirrors how they were trained. However, shall...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/do-faqs-help-with-ai-visibility.html",
+        "canonical_url": "https://wildsignal.agency/blog/do-faqs-help-with-ai-visibility"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How Do Large Language Models Find Answers?",
+        "description": "Large language models do not search the web in real time\u2014they generate answers from patterns learned during training. When you ask a question, the model predict...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-do-large-language-models-find-answers.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-do-large-language-models-find-answers"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How Brands Should Prepare for AI Gatekeepers",
+        "description": "How Brands Should Prepare for AI Gatekeepers",
+        "author": "Andy Pray",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-brands-should-prepare-for-ai-gatekeepers.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-brands-should-prepare-for-ai-gatekeepers"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How to Optimize Content for AI Search Engines",
+        "description": "How to Optimize Content for AI Search Engines",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-to-optimize-content-for-ai-search-engines.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-to-optimize-content-for-ai-search-engines"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How Data Gives GEO a Competitive Moat",
+        "description": "Original data is the most defensible asset in AI search. AI systems prioritize unique, verifiable information they cannot find elsewhere. Brands that produce pr...",
+        "author": "Andy Pray",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-data-gives-geo-a-competitive-moat.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-data-gives-geo-a-competitive-moat"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Perplexity Computer Changes the Math on AI Search",
+        "description": "Perplexity Computer Changes the Math on AI Search",
+        "author": "Andy Pray",
+        "date_published": "February 27, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/perplexity-computer-what-it-means-for-brands-and-ai-search.html",
+        "canonical_url": "https://wildsignal.agency/blog/perplexity-computer-what-it-means-for-brands-and-ai-search"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How to Measure AI Search Visibility",
+        "description": "Measuring AI search visibility requires fundamentally different approaches than traditional SEO. There are no rankings or impressions to count. Visibility is me...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-to-measure-ai-search-visibility.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-to-measure-ai-search-visibility"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How Training Data Shapes AI Recommendations",
+        "description": "AI recommendations are reflections of training data, not objective assessments. Models learn preferences and trust signals from content they were trained on. If...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-training-data-shapes-ai-recommendations.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-training-data-shapes-ai-recommendations"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Does Average Position Mean in AI Answers?",
+        "description": "What Does Average Position Mean in AI Answers?",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-does-average-position-mean-in-ai-answers.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-does-average-position-mean-in-ai-answers"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Why AI Search Rewards Structure Over Keywords",
+        "description": "Keywords told search engines what a page was about. Structure tells AI systems how to think about it. AI models extract meaning from patterns, hierarchies, and...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/why-ai-search-rewards-structure-over-keywords.html",
+        "canonical_url": "https://wildsignal.agency/blog/why-ai-search-rewards-structure-over-keywords"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Happens When AI Can't Find a Good Source?",
+        "description": "What Happens When AI Can't Find a Good Source?",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-happens-when-ai-cant-find-a-good-source.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-happens-when-ai-cant-find-a-good-source"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What AI Search Means for PR and Earned Media",
+        "description": "AI search transforms PR from a visibility play into an authority-building discipline. Media coverage now serves two audiences: humans who read it and AI systems...",
+        "author": "Andy Pray",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-ai-search-means-for-pr-and-earned-media.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-ai-search-means-for-pr-and-earned-media"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Why Citations Are the New Backlinks",
+        "description": "Backlinks built authority in traditional search by signaling trust through links. AI search has an equivalent: citations. When AI systems cite your content, the...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/why-citations-are-the-new-backlinks.html",
+        "canonical_url": "https://wildsignal.agency/blog/why-citations-are-the-new-backlinks"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Is Citation Rate in GEO?",
+        "description": "Citation rate measures how often AI systems reference your content as a source when generating answers. Unlike mentions, citations track when AI explicitly attr...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-is-citation-rate-in-geo.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-is-citation-rate-in-geo"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Makes Content Citable by AI?",
+        "description": "AI systems cite content they trust to be accurate, clear, and attributable. Citable content makes definitive statements, provides sufficient context, and can be...",
+        "author": "Daria Dubois",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-makes-content-citable-by-ai.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-makes-content-citable-by-ai"
+      },
+      {
+        "format": "text/markdown",
+        "title": "ChatGPT Has Ads Now. Here's What That Actually Changes.",
+        "description": "ChatGPT Has Ads Now. Here's What That Actually Changes.",
+        "author": "Andy Pray",
+        "date_published": "February 27, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/chatgpt-ads-are-here-what-brands-need-to-know.html",
+        "canonical_url": "https://wildsignal.agency/blog/chatgpt-ads-are-here-what-brands-need-to-know"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How PR Must Evolve for AI Discovery",
+        "description": "PR was built for human discovery. AI changes that. Learn how public relations must evolve from visibility-driven placement to authority-driven signal building.",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-pr-must-evolve-for-ai-discovery.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-pr-must-evolve-for-ai-discovery"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Why Platform Dependence Is Risky in the AI Era",
+        "description": "Brands that built discovery strategy around a single platform learned the cost of dependence when algorithms changed. AI fragments discovery across multiple sys...",
+        "author": "Andy Pray",
+        "date_published": "January 6, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/why-platform-dependence-is-risky-in-the-ai-era.html",
+        "canonical_url": "https://wildsignal.agency/blog/why-platform-dependence-is-risky-in-the-ai-era"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How Reddit, Forums, and Long-Form Reviews Influence AI Answers",
+        "description": "How Reddit, Forums, and Long-Form Reviews Influence AI Answers",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-reddit-forums-and-long-form-reviews-influence-ai-answers.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-reddit-forums-and-long-form-reviews-influence-ai-answers"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How to Audit Your Brand's AI Search Presence",
+        "description": "How to Audit Your Brand's AI Search Presence",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-to-audit-your-brands-ai-search-presence.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-to-audit-your-brands-ai-search-presence"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How AI Search Affects Voice Assistants and Home Devices",
+        "description": "AI search is embedded into voice assistants, home devices, cars, and wearables. Learn how discovery shifts from user-driven exploration to system-driven decisio...",
+        "author": "Daria Dubois",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-ai-search-affects-voice-assistants-and-home-devices.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-ai-search-affects-voice-assistants-and-home-devices"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How Long GEO Takes to Show Results",
+        "description": "GEO doesn't work like SEO. Learn realistic timelines for generative engine optimization, the three phases of impact, and what accelerates or slows results.",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-long-geo-takes-to-show-results.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-long-geo-takes-to-show-results"
+      },
+      {
+        "format": "text/markdown",
+        "title": "How AI Interprets Brand Authority",
+        "description": "Brand authority is now interpreted by machines. Learn how AI systems evaluate trust through consistency, consensus, and corroboration\u2014and how to build it.",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/how-ai-interprets-brand-authority.html",
+        "canonical_url": "https://wildsignal.agency/blog/how-ai-interprets-brand-authority"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Long-Term Memory in AI Systems Means for Brands",
+        "description": "Long-term memory in AI systems is reshaping how brands are discovered, trusted, and chosen. Learn how AI memory creates permanent discovery advantages or risks...",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-long-term-memory-in-ai-systems-means-for-brands.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-long-term-memory-in-ai-systems-means-for-brands"
+      },
+      {
+        "format": "text/markdown",
+        "title": "GEO vs. AEO: What's the Difference?",
+        "description": "GEO (Generative Engine Optimization) and AEO (AI Engine Optimization) are the same thing\u2014optimizing content so AI models cite it in their responses. Some people...",
+        "author": "Daria Dubois",
+        "date_published": "October 25, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/geo-vs-aeo.html",
+        "canonical_url": "https://wildsignal.agency/blog/geo-vs-aeo"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Does It Matter When an Article Is Published for It to Be Cited?",
+        "description": "Yes, but not how you think. Recency matters for time-sensitive topics, but for evergreen content, publication date is less important than quality and structure....",
+        "author": "Daria Dubois",
+        "date_published": "October 23, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/does-it-matter-when-an-article-is-published-for-it-to-be-cite.html",
+        "canonical_url": "https://wildsignal.agency/blog/does-it-matter-when-an-article-is-published-for-it-to-be-cite"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What It Means When There Is Only One Answer",
+        "description": "AI search is transforming the internet from options to decisions. Learn what happens to brand competition when AI provides a single answer instead of a list.",
+        "author": "Andy Pray",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-it-means-when-there-is-only-one-answer.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-it-means-when-there-is-only-one-answer"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Why is Reddit The Most Cited Thing on the Web?",
+        "description": "Why is Reddit The Most Cited Thing on the Web?",
+        "author": "Andy Pray",
+        "date_published": "October 26, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/why-is-reddit-the-most-cited-thing-on-the-web.html",
+        "canonical_url": "https://wildsignal.agency/blog/why-is-reddit-the-most-cited-thing-on-the-web"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Why One GEO Strategy Does Not Fit All Models",
+        "description": "Why One GEO Strategy Does Not Fit All Models",
+        "author": "Daria Dubois",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/why-one-geo-strategy-does-not-fit-all-models.html",
+        "canonical_url": "https://wildsignal.agency/blog/why-one-geo-strategy-does-not-fit-all-models"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Are the Main Measurements of GEO to Be Aware Of?",
+        "description": "What Are the Main Measurements of GEO to Be Aware Of?",
+        "author": "Daria Dubois",
+        "date_published": "October 21, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-are-the-main-measurements-of-geo-to-be-aware-of.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-are-the-main-measurements-of-geo-to-be-aware-of"
+      },
+      {
+        "format": "text/markdown",
+        "title": "No, SEO isn't Dead.",
+        "description": "Traditional search still matters, but AI-powered answers are eating into search traffic. Smart brands are doing both: optimizing for Google's algorithms while a...",
+        "author": "Andy Pray",
+        "date_published": "October 21, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/seo-isnt-dead.html",
+        "canonical_url": "https://wildsignal.agency/blog/seo-isnt-dead"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Why Different LLMs Trust Different Sources",
+        "description": "Why Different LLMs Trust Different Sources",
+        "author": "Daria Dubois",
+        "date_published": "January 1, 2026",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/why-different-llms-trust-different-sources.html",
+        "canonical_url": "https://wildsignal.agency/blog/why-different-llms-trust-different-sources"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Does Paid Matter on AI Search?",
+        "description": "Right now, AI citations are earned organically based on content quality. But paid placements in AI search are starting to emerge\u2014expect sponsored citations, par...",
+        "author": "Andy Pray",
+        "date_published": "October 18, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/does-paid-matter-on-ai-search.html",
+        "canonical_url": "https://wildsignal.agency/blog/does-paid-matter-on-ai-search"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Is Paid Media Coming to AI?",
+        "description": "It's already here. Perplexity has launched sponsored answers, Google shows ads around AI Overviews, and OpenAI is exploring ad models. Expect paid placements in...",
+        "author": "Andy Pray",
+        "date_published": "October 20, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/is-paid-media-coming-to-ai.html",
+        "canonical_url": "https://wildsignal.agency/blog/is-paid-media-coming-to-ai"
+      },
+      {
+        "format": "text/markdown",
+        "title": "Does a Publishing Deal With OpenAI Impact GEO Relevance?",
+        "description": "It probably means preferential treatment, but we don't know exactly how much. Outlets with OpenAI deals likely get cited more often because their content is dir...",
+        "author": "Andy Pray",
+        "date_published": "October 16, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/does-a-publishing-deal-with-openai-impact-geo-relevance.html",
+        "canonical_url": "https://wildsignal.agency/blog/does-a-publishing-deal-with-openai-impact-geo-relevance"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Is an AI Citation?",
+        "description": "An AI citation is when an AI model references a specific source while generating a response\u2014usually showing as a link, footnote, or inline reference to the orig...",
+        "author": "Daria Dubois",
+        "date_published": "October 22, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-is-an-ai-citation.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-is-an-ai-citation"
+      },
+      {
+        "format": "text/markdown",
+        "title": "What Should I Look for in a GEO Agency?",
+        "description": "Look for a GEO agency with proprietary data on AI citation patterns, real expertise in how AI models work, and a track record of optimizing content for citabili...",
+        "author": "Andy Pray",
+        "date_published": "October 21, 2025",
+        "url": "https://daria-ship-it.github.io/wildsignal-research/articles/what-should-i-look-for-in-a-geo-agency.html",
+        "canonical_url": "https://wildsignal.agency/blog/what-should-i-look-for-in-a-geo-agency"
+      }
+    ]
+  }
+}
