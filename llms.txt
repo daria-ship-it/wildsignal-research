@@ -4,6 +4,11 @@
 ## About Wild Signal
 - [Wild Signal Agency](https://wildsignal.agency): AI intelligence firm focused on Generative Engine Optimization (GEO) and the citation economy.
 
+## Frameworks & Field Guides
+- [Content Optimization Master Framework](https://daria-ship-it.github.io/wildsignal-research/frameworks/content-optimization-master-framework.html): A prioritized, evidence-graded model for AI citation readiness — 28 optimization elements across four tiers, plus per-LLM engine weighting.
+- [GEO Audit — Evaluation Methodology](https://daria-ship-it.github.io/wildsignal-research/frameworks/geo-audit-evaluation-methodology.html): The rulebook the Wild Signal GEO Audit tool runs on: how it decides whether a web page is readable, trustworthy, and citable by AI search systems.
+- [GEO YouTube Audit Framework](https://daria-ship-it.github.io/wildsignal-research/frameworks/geo-youtube-audit-framework.html): The six-domain framework for auditing a YouTube channel's readiness to be found, cited, and referenced by AI systems.
+
 ## GEO Research Library
 - [Struggling to Appear in LLM Responses? Here's What to Do.](https://daria-ship-it.github.io/wildsignal-research/articles/struggling-to-appear-in-llm-responses-heres-what-to-do.html): Your brand has a website, a content library, maybe even strong Google rankings. But when someone asks ChatGPT, Perplexity, or Claude about your category, you do...
 - [What Is WebMCP and How Do You Make Your Website AI-Agent Ready?](https://daria-ship-it.github.io/wildsignal-research/articles/webmcp-the-agentic-web-and-why-geo-just-got-a-new-front-door.html): WebMCP (Web Model Context Protocol) is a new Google standard that lets websites expose their capabilities — forms, content, data — directly to AI agents as stru...

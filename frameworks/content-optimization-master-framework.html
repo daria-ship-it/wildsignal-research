@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Optimization Master Framework — Wild Signal GEO Research Library</title>
+<meta name="description" content="A prioritized, evidence-graded model for AI citation readiness — 28 optimization elements across four tiers, plus per-LLM engine weighting.">
+<link rel="canonical" href="https://daria-ship-it.github.io/wildsignal-research/frameworks/content-optimization-master-framework.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Content Optimization Master Framework">
+<meta property="og:description" content="A prioritized, evidence-graded model for AI citation readiness — 28 optimization elements across four tiers, plus per-LLM engine weighting.">
+<meta property="og:url" content="https://daria-ship-it.github.io/wildsignal-research/frameworks/content-optimization-master-framework.html">
+<meta property="og:site_name" content="Wild Signal">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Content Optimization Master Framework",
+  "description": "A prioritized, evidence-graded model for AI citation readiness — 28 optimization elements across four tiers, plus per-LLM engine weighting.",
+  "author": { "@type": "Organization", "name": "Wild Signal" },
+  "publisher": { "@type": "Organization", "name": "Wild Signal", "url": "https://wildsignal.agency" },
+  "datePublished": "2026-07-28",
+  "url": "https://daria-ship-it.github.io/wildsignal-research/frameworks/content-optimization-master-framework.html",
+  "isPartOf": { "@type": "WebSite", "name": "Wild Signal GEO Research Library", "url": "https://daria-ship-it.github.io/wildsignal-research" }
+}
+</script>
+<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/plain" href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  --color-bg: #fafafa; --color-surface: #ffffff; --color-text: #1a1a1a;
+  --color-muted: #6b7280; --color-accent: #1d4ed8; --color-border: #e5e7eb;
+  --color-tag: #f3f4f6; --color-indigo: #292A48;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --radius: 4px; --max-prose: 800px;
+}
+body { font-family: var(--font); background: var(--color-bg); color: var(--color-text);
+  margin: 0; padding: 0; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { border-bottom: 1px solid var(--color-border); padding: 16px 24px; background: var(--color-surface); }
+.site-header .inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+.site-header .logo { font-weight: 700; font-size: 15px; color: var(--color-text); letter-spacing: -0.01em; }
+.site-header .logo span { color: var(--color-accent); }
+.site-header nav { margin-left: auto; font-size: 14px; }
+.site-header nav a { color: var(--color-muted); margin-left: 20px; }
+.site-header nav a:hover { color: var(--color-text); text-decoration: none; }
+.prose { max-width: var(--max-prose); margin: 0 auto; padding: 0 24px; }
+.article-header { padding: 48px 24px 32px; max-width: var(--max-prose); margin: 0 auto; }
+.article-header h1 { font-size: clamp(22px, 3.5vw, 32px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.22; margin: 0 0 16px; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--color-muted); margin-bottom: 8px; }
+.article-meta strong { color: var(--color-text); font-weight: 500; }
+.lede { font-size: 16px; color: var(--color-muted); margin: 4px 0 0; max-width: var(--max-prose); }
+.back-link { font-size: 13px; color: var(--color-muted); display: block; margin-bottom: 24px; }
+.back-link:hover { color: var(--color-text); text-decoration: none; }
+/* body */
+.article-body { padding-bottom: 64px; }
+.article-body h1 { font-size: 24px; font-weight: 700; margin: 1.8em 0 0.5em; letter-spacing: -0.01em; }
+.article-body h2 { font-size: 20px; font-weight: 700; margin: 2em 0 0.6em; letter-spacing: -0.01em; padding-top: 0.3em; border-top: 1px solid var(--color-border); }
+.article-body h3 { font-size: 16px; font-weight: 700; margin: 1.6em 0 0.5em; }
+.article-body h4 { font-size: 15px; font-weight: 600; margin: 1.4em 0 0.4em; color: var(--color-muted); }
+.article-body p { margin: 0 0 1.2em; }
+.article-body ul, .article-body ol { padding-left: 1.6em; margin: 0 0 1.2em; }
+.article-body li { margin-bottom: 0.4em; }
+.article-body code { font-size: 13px; background: var(--color-tag); padding: 1px 5px; border-radius: 3px; font-family: 'SF Mono', 'Fira Code', monospace; }
+.article-body pre { background: var(--color-tag); padding: 14px 16px; border-radius: var(--radius); overflow-x: auto; margin: 0 0 1.2em; }
+.article-body pre code { background: none; padding: 0; }
+.article-body strong { font-weight: 600; }
+.article-body hr { border: none; border-top: 1px solid var(--color-border); margin: 2em 0; }
+.article-body blockquote { border-left: 3px solid var(--color-indigo); margin: 0 0 1.2em; padding: 2px 0 2px 16px; color: var(--color-muted); }
+/* tables */
+.article-body .table-wrap { overflow-x: auto; margin: 0 0 1.4em; }
+.article-body table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+.article-body th, .article-body td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+.article-body thead th { background: var(--color-indigo); color: #fff; font-weight: 600; border-bottom: none; }
+.article-body tbody tr:nth-child(even) { background: #f4f4f8; }
+.site-footer { border-top: 1px solid var(--color-border); padding: 24px; font-size: 12px; color: var(--color-muted); text-align: center; margin-top: 32px; }
+.site-footer a { color: var(--color-muted); }
+@media (max-width: 600px) { .article-body table { font-size: 12px; } }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <span class="logo">Wild Signal <span>Research Library</span></span>
+    <nav>
+      <a href="../index.html">All Articles</a>
+      <a href="https://wildsignal.agency" rel="noopener">wildsignal.agency</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="article-header">
+    <a href="../index.html" class="back-link">← Back to Research Library</a>
+    <h1>Content Optimization Master Framework</h1>
+    <div class="article-meta">
+      <span>Field guide · <strong>Wild Signal Agency</strong></span>
+      <span>July 2026</span>
+    </div>
+    <p class="lede">A prioritized, evidence-graded model for AI citation readiness — 28 optimization elements across four tiers, plus per-LLM engine weighting.</p>
+  </div>
+  <article class="prose article-body">
+<h2>How to read this document</h2>
+<p>This framework replaces the flat checklist model of the March 2026 guidebook with a prioritized, evidence-graded one. Every optimization element carries three things the old document did not: a <strong>priority tier</strong>, an <strong>evidence grade</strong>, and a <strong>page-type mapping</strong> that says which page the signal is evaluated on and why.</p>
+<p>It was built from a fresh re-verification of the guidebook's claims against the current state of the field, plus new research into the areas the guidebook underweighted. Two things drove the rewrite. First, several of the guidebook's headline statistics are now wrong, reversed, or traceable only to vendor blogs that cite each other. Second, the field moved. Google published its <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">first official generative-AI optimization guide</a> in May 2026, and a <a href="https://arxiv.org/html/2607.14035v1">45-study academic survey</a> landed in July 2026 that contradicts a lot of popular agency guidance.</p>
+<h3>Engine emphasis tags</h3>
+<p>Most elements matter everywhere. A few matter measurably more, or measurably less, on a specific engine. Where a real, source-backed differential exists, the element carries an <strong>Engine emphasis</strong> line naming the engines and the evidence. Where no measured differential exists, the element is not tagged — assume it applies to all engines. The full per-engine breakdown lives in the <a href="#engine-specific-weighting-which-signals-matter-per-llm">Engine-specific weighting</a> section near the end. We never invent an engine preference we cannot source; several popular "X works better on Claude/Grok/DeepSeek" claims have no measured basis, and we say so.</p>
+<h3>Evidence grades</h3>
+<p>Every element is graded so we never oversell a tactic to a client.</p>
+<ul>
+<li><strong>A — Proven.</strong> Controlled study or first-party platform documentation supports it.</li>
+<li><strong>B — Correlational.</strong> Observed in large citation datasets, but cause and effect not established.</li>
+<li><strong>C — Emerging.</strong> Directional signal, thin or single-source evidence.</li>
+<li><strong>D — Unproven / contested.</strong> Widely repeated, but the primary evidence is missing, vendor-circular, or points the other way.</li>
+</ul>
+<p>A high priority with a C or D grade means <strong>do it because it is cheap, standard hygiene, or good for humans — not because a citation lift is guaranteed.</strong> We say that to the client plainly.</p>
+<h3>Priority tiers</h3>
+<ul>
+<li><strong>Tier 1 — Foundational.</strong> If these fail, nothing else matters. Access, indexability, relevance.</li>
+<li><strong>Tier 2 — Highest-impact content.</strong> The writing and structure decisions that move citation odds most.</li>
+<li><strong>Tier 3 — Authority and entity.</strong> Slower, compounding signals that decide whether the brand is trusted.</li>
+<li><strong>Tier 4 — Supporting hygiene.</strong> Real, but smaller or contested. Do them; don't lead with them.</li>
+</ul>
+<hr />
+<h2>The five corrections every Wild Signal analyst must internalize</h2>
+<p>Before the framework, five things from the old guidebook that we now state differently. These are the ones most likely to embarrass us in a client meeting if we repeat them.</p>
+<ol>
+<li>
+<p><strong>The promotional-tone stat was backwards.</strong> The guidebook said promotional content is "26.19% less likely to be cited." The <a href="https://www.semrush.com/blog/content-optimization-ai-search-study/">Semrush study</a> actually attaches the −26.19% to <em>non-promotional</em> tone as a measured on-page signal. The practical advice — write informationally, not like a sales page — still holds and is supported elsewhere. The specific stat does not. Drop it.</p>
+</li>
+<li>
+<p><strong>"AI Overviews cite ~8 sources, 70% from the top 10" is stale on both halves.</strong> <a href="https://surferseo.com/blog/ai-overviews-research/">Surfer's July 2026 data</a> puts it at 3–4 sources per Overview. <a href="https://ahrefs.com/blog/ai-overview-citations-top-10/">Ahrefs</a> found only 37.9% of AIO-cited URLs sit in the first 10 organic blocks — down from ~76% in mid-2025 — and 31% now come from beyond the top 100. Google's sourcing got deeper and more fan-out-driven.</p>
+</li>
+<li>
+<p><strong>"Original research earns 4.31x more citations" is a misread.</strong> The <a href="https://www.yext.com/research/ai-citation-behavior-across-models">Yext 4.31x figure</a> compares <em>websites</em> to <em>directory listings</em> per URL. It has nothing to do with original research. Original data is still worth publishing; this number does not prove it.</p>
+</li>
+<li>
+<p><strong>Six of the guidebook's punchiest stats trace only to vendor blogs citing each other.</strong> The 1:80 fact-to-word rule, the 134–167 word block, the 156%/317% multimodal lift, the "2.5x less likely if buried," "3+ platforms = 2x visibility," and "original research beats opinion 40–50% vs 18%." None resolve to a fetchable primary dataset. We stop presenting them as fact.</p>
+</li>
+<li>
+<p><strong>Google now uses "AEO/GEO" as a pejorative.</strong> Its May 2026 guide's takeaway is literally "Prioritize effective SEO strategies over 'AEO/GEO hacks,'" and it names <code>llms.txt</code>, content chunking, and per-fan-out-query pages as things to ignore or avoid. We keep using "GEO" internally because it is the academic and majority term, but we never sell a client a tactic Google has publicly called a hack.</p>
+</li>
+</ol>
+<hr />
+<h2>Tier 1 — Foundational: can AI reach, read, and match the page?</h2>
+<p>If any of these fail, the content is invisible no matter how well written. These are pass/fail gates, evaluated <strong>site-wide and per-template</strong>, not on any single page.</p>
+<h3>1.1 · Crawler access for AI search bots · Grade A · Homepage / robots.txt / WAF</h3>
+<p>The single most common silent failure. A page that is blocked, or served behind a WAF that challenges bots, is removed from an engine before content ever matters. The bot list is now <strong>three-way per vendor</strong> — train, search-index, and user-fetch are separate agents — and the search-index bots are the ones that decide citation eligibility.</p>
+<p>Allow, at minimum: <strong>OAI-SearchBot</strong> and <strong>ChatGPT-User</strong> (<a href="https://platform.openai.com/docs/bots">OpenAI</a>), <strong>Claude-SearchBot</strong> and <strong>Claude-User</strong> (<a href="https://privacy.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic</a>), <strong>PerplexityBot</strong> (<a href="https://docs.perplexity.ai/guides/bots">Perplexity</a>), and <strong>Googlebot / Google-Extended</strong>. New in 2026: <strong>OAI-AdsBot</strong>. Anthropic states plainly that disabling Claude-SearchBot "may reduce your site's visibility." <strong>Check the WAF, not just robots.txt</strong> — Cloudflare or Fastly bot rules silently strip sites from these engines, and content quality never enters the picture. <em>This is the check that fails clients who think they have a content problem.</em></p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Each vendor runs its own search-index bot and gates citation eligibility separately, so a single blocked user-agent removes you from exactly one engine. <code>noindex</code> and <code>Google-Extended</code> govern the Google surfaces; <code>Claude-User</code> / <code>Claude-SearchBot</code> govern Claude, which Anthropic warns is the lever for its "user-directed web search" (<a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic</a>). Otterly found 73% of sites carry at least one technical barrier blocking an AI crawler (<a href="https://otterly.ai/blog/the-ai-citations-report-2026/">Otterly</a>).</p>
+</blockquote>
+<h3>1.2 · Content renders in raw HTML without JavaScript · Grade A · Every template</h3>
+<p>No major AI crawler executes JavaScript as of mid-2026, verified against <a href="https://hybridranking.com/blog/most-ai-crawlers-dont-render-javascript-2026">500M+ fetch events</a>. Googlebot is the exception. If a page needs JS to paint its main content, most engines see an empty shell. Test: disable JavaScript, reload, confirm the primary content and links are present in source. Server-side render or pre-render for bot user agents where they are not.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Microsoft is the only vendor that states this in its own docs: "Hiding critical content behind client-side rendering can hinder efficient crawling and rendering" — a direct instruction for <strong>Copilot</strong> (<a href="https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a">Bing Webmaster Guidelines</a>). OpenAI, Anthropic, Perplexity, and xAI make no rendering statement at all, so treat no-JS as a hard requirement for every non-Google engine.</p>
+</blockquote>
+<h3>1.3 · The page is indexed and eligible for a snippet · Grade A · Every page</h3>
+<p>Google's guide is blunt: for a page to appear in AI Overviews or AI Mode, "a page must be indexed and eligible to be shown in Google Search with a snippet. There are no additional technical requirements" (<a href="https://developers.google.com/search/docs/appearance/ai-features">Google</a>). <code>noindex</code> is also the true opt-out for ChatGPT — a blocked-but-linked page can still surface as a bare title. Indexability is the gate; there is no GEO trick that bypasses it.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Google-index eligibility is a hard gate for <strong>AI Overviews</strong> and <strong>AI Mode</strong> by Google's own statement, and it matters most for <strong>Perplexity</strong>: 28.6% of Perplexity citations overlap the Google top-10 organic result, versus roughly 8% for the other engines (<a href="https://ahrefs.com/blog/ai-search-overlap/">Ahrefs</a>). Ranking well in classic Google Search is a near-direct Perplexity lever; on ChatGPT and Claude the overlap is weak, so a strong Google position does not carry over.</p>
+</blockquote>
+<h3>1.4 · Query–document relevance · Grade A · Every page</h3>
+<p>The most reproducible finding in the entire 45-study survey: <strong>relevance dominates every other signal.</strong> Models "strongly favor explicit alignment with the question, often more than human credibility cues" (<a href="https://arxiv.org/html/2607.14035v1">survey</a>). A page that does not directly and specifically answer the query will not be cited no matter how authoritative the author or how clean the schema. Everything below is a multiplier on relevance, not a substitute for it.</p>
+<h3>1.5 · Clean, stable, human-readable URLs + canonical + HTTPS · Grade A/B · Every template</h3>
+<p>Stable URLs preserve historical citations and embeddings. One canonical per page prevents duplicate variants from splitting the signal. Full HTTPS is a baseline trust gate. <a href="https://seranking.com/blog/ai-statistics/">SE Ranking</a> found 96.45% of AIO-cited URLs return HTTP 200 (2025 data); accessibility remains the top-scored technical factor in 2026 rankings. Grade B on the specific percentage, A on the principle.</p>
+<h3>1.6 · Current XML sitemap · Grade B · Site-wide</h3>
+<p>With Google now pulling 31% of AIO citations from URLs beyond the top 100 (<a href="https://ahrefs.com/blog/ai-overview-citations-top-10/">Ahrefs</a>), deep pages that a sitemap surfaces are exactly the ones at stake. List every indexable page with accurate <code>lastmod</code> dates and reference it from robots.txt.</p>
+<h3>1.7 · Performance: TTFB, LCP, CLS · Grade C · Every template</h3>
+<p>Fast pages are not penalized and slow ones can be deprioritized in crawl budgets, but no 2026 primary study isolates Core Web Vitals as a citation driver. Keep TTFB low, LCP ≤2.5s, CLS &lt;0.1 as hygiene. Do not sell it as a citation lever.</p>
+<hr />
+<h2>Tier 2 — Highest-impact content: the writing and structure that move citation odds</h2>
+<p>This is where day-to-day content work lives. Graded honestly, because the academic evidence is more sober than the agency consensus.</p>
+<h3>2.1 · Answer-first, front-loaded structure · Grade A · Blog / guide / FAQ / pillar</h3>
+<p>Lead every section with the direct answer, then expand. <strong>44.2% of LLM citations come from the first third of the page</strong> (<a href="https://searchengineland.com/chatgpt-citations-content-study-469483">Kevin Indig, 1.2M answers, via Search Engine Land</a>); a UK re-test in April 2026 found 47.3%. The academic framing is more precise and more useful: what matters is <strong>rank within the retrieved context</strong>, and "moving a source higher in the context has a greater effect than most rewrites" (<a href="https://arxiv.org/html/2607.14035v1">survey</a>). Front-loading the answer and the key statistic is the highest-confidence content move we have. <em>Put the answer where the model reads first.</em></p>
+<h3>2.2 · Extractable evidence units: statistics, definitions, comparisons, dates · Grade A · Every content page</h3>
+<p>The strongest content finding, correctly stated. High-citation pages are "richer in extractable evidence such as definitions, numerical facts, comparisons, and procedural steps" (<a href="https://arxiv.org/abs/2604.25707">citation-absorption study, 21,143 citations</a>). The academic criterion is exact: <strong>"not to 'add numbers,' but to provide relevant, verifiable, dated, and properly attributed evidence."</strong> In the foundational GEO experiments, Quotation Addition and Statistics Addition were the two strongest methods, driving the position-adjusted-word-count score from 19.3 to 27.2 (~41%) (<a href="https://arxiv.org/html/2607.14035v1">survey audit table</a>).</p>
+<p>Two caveats we carry into every engagement:
+- <strong>The effect is zero-sum and context-bound.</strong> Under the Cite Sources method, "the fifth source gains 115.1% while the first loses 30.3%." Gains are "conditional on a source already being present in a fixed context."
+- <strong>Body-only rewrites can backfire.</strong> In a 171,003-document arena, optimizing body text alone cut top-20 retrieval ~9% and final citation ~6%. Evidence units help <em>once you are retrieved</em>; they do not by themselves get you retrieved.</p>
+<h3>2.3 · Question-based headings and visible Q&amp;A · Grade A · FAQ / blog / guide / glossary</h3>
+<p>Question phrasing roughly doubles citation odds, with 78.4% of question-tied citations coming from headings (<a href="https://searchengineland.com/chatgpt-citations-content-study-469483">Indig</a>); <a href="https://www.semrush.com/blog/content-optimization-ai-search-study/">Semrush</a> measured +25.45% for Q&amp;A structure. Question phrasing also lifts AI Overview <em>activation</em> from 13.7% to 64.7% across 55,393 queries (<a href="https://arxiv.org/html/2607.14035v1">survey</a>). Note the distinction that matters: <strong>visible body Q&amp;A drives this, not FAQPage schema.</strong> Write the questions into the H2s and answer them in the first sentence beneath.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> The single measured activation jump — 13.7% to 64.7% — is a <strong>Google AI Overviews</strong> finding specifically (<a href="https://arxiv.org/html/2607.14035v1">survey</a>); on AIO, matching the query's question phrasing changes whether an answer box even fires. The doubling of citation odds is measured on <strong>ChatGPT</strong> answers (<a href="https://searchengineland.com/chatgpt-citations-content-study-469483">Indig</a>). Treat question-shaped headings as highest-value for the Google surfaces and ChatGPT; no comparable figure exists for Claude, Grok, or DeepSeek.</p>
+</blockquote>
+<h3>2.4 · Entity-rich, definitive language · Grade A · Every content page</h3>
+<p>Heavily cited text averaged <strong>20.6% proper nouns</strong> versus 5–8% for typical English, and definitive phrasing ("X is Y") roughly doubled citation likelihood versus hedged (<a href="https://searchengineland.com/chatgpt-citations-content-study-469483">Indig</a>). Name the specific places, products, people, dates, and numbers. State findings; do not hedge them. This is a rare case where the house voice and the citation data point the same way.</p>
+<h3>2.5 · Single H1 and sequential heading hierarchy · Grade B · Every page</h3>
+<p>87% of cited pages use exactly one H1 and 68.7% follow logical heading nesting; sequential structure correlates with 2.8x higher citation odds (<a href="https://www.airops.com/report/the-2026-state-of-ai-search">AirOps 2026</a>). Correlational, not causal — but it is free, it is standard, and it is how a model infers page topic. Do it on every template.</p>
+<h3>2.6 · Self-contained passages and clean structure — NOT machine-chunking · Grade A (as a negative) · Every content page</h3>
+<p>Reframed from the guidebook. Google explicitly names "content chunking" as a hack to ignore, and an academic test found cluster-based chunking "did not outperform simpler strategies" (<a href="https://arxiv.org/html/2607.01852v1">arXiv</a>). Write short, self-contained paragraphs under clear headings so any passage stands alone when lifted. Do not break content into artificial fragments for machines, and drop the "134–167 word optimal block" number — it traces only to vendor pages.</p>
+<h3>2.7 · Lists and comparison tables · Grade B · Comparison / listicle / product</h3>
+<p>Structured on-page elements (tables, lists) are a measured positive signal (<a href="https://www.semrush.com/blog/content-optimization-ai-search-study/">Semrush, +21.60%</a>). But drop the flat "listicles 25% vs blogs 11%" claim — <a href="https://www.deltavdigital.com/resources/reports/ai-citation-study/">DeltaV's 2026 data</a> shows there is "no single best content format"; the winning format is industry-specific. Use tables where a comparison is genuinely the answer, not as a formatting trick.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Comparison-shaped pages are cited far more heavily by <strong>Perplexity</strong> (22% of its cited pages) and <strong>Gemini</strong> (24%) than by <strong>ChatGPT</strong>, whose mix skews to standard blogs (46%) with comparison pages a smaller slice (<a href="https://www.seerinteractive.com/insights/ai-platform-citation-patterns-2026">Seer page-type study</a>). If a client's category is comparison-driven, the table format pays off most on Perplexity and Gemini.</p>
+</blockquote>
+<h3>2.8 · Non-commodity, original point of view · Grade B · Every content page</h3>
+<p>Google's own strongest statement: creating content "people find unique, compelling, and useful will likely influence your website's presence in generative AI search in the long run more than any of the other suggestions." Its worked contrast is a commodity "7 Tips for First-Time Homebuyers" against a non-commodity "Why We Waived the Inspection &amp; Saved Money" (<a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Google</a>). Originality is the long-game lever. We cannot attach a citation multiplier to it, and we should not try.</p>
+<h3>2.9 · Freshness and active maintenance · Grade A · Every content page, page-type dependent</h3>
+<p>The strongest new study of 2026. Across 47,097 citations, <strong>75% of cited pages were updated in the last year and 88% within two years</strong>; of those updated recently, more than half were touched in the previous three months (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). The read: <em>"Publish and forget loses. Publish and maintain wins."</em> Freshness expectations are page-type specific — comparison, review, marketplace, and brand pages are cited freshest and must be kept current; blogs and guides carry the volume but tolerate more age. One honest caveat: the study shows cited pages <em>are</em> fresh, not that refreshing <em>causes</em> citation. Updating proven winners is the observed pattern.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Freshness sensitivity is not uniform. <strong>Gemini</strong> is the most recency-hungry (78% of its cited pages under one year, 90% under two), then <strong>ChatGPT</strong> (73% / 87%), then <strong>Perplexity</strong> (65% / 83%) (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). Publishing speed diverges too: <strong>AI Mode</strong> cites 36% of new content within 24 hours but that share decays to 26% by day 30, while <strong>ChatGPT</strong> starts slow and climbs to 42% by day 30 (<a href="https://www.semrush.com/blog/how-fast-do-ai-search-platforms-cite-new-content/">Semrush</a>). Chase same-week AI Mode pickup; build for durable ChatGPT accrual.</p>
+</blockquote>
+<hr />
+<h2>Tier 3 — Authority and entity: does the brand get trusted?</h2>
+<p>Slower, compounding signals. They decide whether the brand is a source an engine reaches for. This is also where the three elements you flagged as missing live — and the fresh research changes how confidently we can sell each one.</p>
+<h3>3.1 · Named, credentialed author byline · Grade C · Blog / guide / author page</h3>
+<p>You were right that this belongs in the framework, and right that the old guidebook underweighted it. The honest grade is C, not A. Google <strong>strongly encourages</strong> visible bylines linking to author background as an E-E-A-T signal (<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google</a>). The one controlled test — Seer, 123 pages — showed <strong>+11.7 points of Googlebot crawl rate and +109% Bing citations</strong> from adding bylines, but AI Overview performance "roughly in line" with untreated pages (<a href="https://www.seerinteractive.com/work/case-studies/author-bylines">Seer</a>). The academic counterweight: relevance dominates credibility cues, and "authoritative tone" is rated weak and unstable (<a href="https://arxiv.org/html/2607.14035v1">survey</a>).</p>
+<p>So: add real bylines with real credentials, on every editorial page, linked to a real author page. Do it for trust, for Google's quality systems, and for the plausible crawl and Bing lift. Do not promise a client a citation jump. <em>The confident "+41% author lift" numbers in agency blogs do not trace to a primary study.</em></p>
+<h3>3.2 · Author bio / About page as a trust artifact · Grade C · Author page / About page</h3>
+<p>Google names these specifically as pages readers and raters look for: content should show "background about the author or the site that publishes it, such as through links to an author page or a site's About page." Build them, make them entity-rich, keep them current. Grade C because their citation impact is inferred from Google's quality guidance, not measured.</p>
+<h3>3.3 · Unique, well-positioned proprietary data · Grade B · Original-research / pillar / data pages</h3>
+<p>Your second flagged element, and a real strength when done right. The value is not "we published a stat." It is <strong>first-party, verifiable, dated, properly attributed evidence, placed high on the page.</strong> Position beats volume: the key figure belongs in the front third (2.1), and the page should carry a plain "how we collected this" note for provenance. Grade B, not A, for two reasons the client should hear: no fetched study isolates first-party data as beating aggregated third-party stats, and no study measures a citation lift from a methodology section. It is defensible on trust and originality grounds (<a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Google</a>); it is not a proven citation multiplier.</p>
+<h3>3.4 · Multimodality: video, images, and their text layer · Grade B · Video / blog / product / pillar</h3>
+<p>Your third flagged element. Real, with one hard caveat: <strong>there is no peer-reviewed multimodal GEO measurement</strong> in the entire 45-study survey. What we do know:</p>
+<ul>
+<li><strong>YouTube is the #1 cited domain in Google AI Overviews</strong> at 21.1% mention share, ahead of Reddit (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>). But cross-platform across six engines, social and video is only 5.54% of all citations — brand domains are 52.2% (<a href="https://otterly.ai/blog/youtube-ai-citation-study-2026/">Otterly.ai</a>). Do not generalize the 21% to non-Google surfaces.</li>
+<li><strong>The text layer is what most engines read.</strong> Alt text now functions as a grounding signal for visual tokens, and video is optimized through OCR-readable on-screen text (persist 1–3 seconds, 1080p, high contrast) plus a human-verified transcript (<a href="https://searchengineland.com/how-to-optimize-video-for-ai-powered-search-468026">Search Engine Land</a>). These are credible trade specs, not peer-reviewed.</li>
+<li><strong>Chapters and timestamps are the one measured video signal</strong> — 78% of timestamped cited videos were cited multiple times, on Google surfaces only (<a href="https://otterly.ai/blog/youtube-ai-citation-study-2026/">Otterly.ai</a>). 94% of YouTube citations go to long-form, not Shorts.</li>
+<li><strong>Drop the 156% / 317% multimodal-lift numbers.</strong> They appear only on vendor pages and are absent from the <a href="https://surferseo.com/blog/ai-citation-report/">Surfer report</a> they are attributed to.</li>
+</ul>
+<p>Produce video and images, caption and transcribe them, keep the important content in text. The lift is directionally supported and unquantified.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> YouTube concentration swings by two orders of magnitude. <strong>Perplexity</strong> cites YouTube most heavily (31.2% of its cited domains), then <strong>AI Overviews</strong> (21.1%), <strong>AI Mode</strong> (17.0%), <strong>Grok</strong> (15.1%), <strong>Gemini</strong> (13.9%) — while <strong>Copilot</strong> almost ignores it (2.5%) (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>). YouTube brand mentions are also the single strongest brand-visibility correlate across ChatGPT, AI Mode, and AIO (~0.737) (<a href="https://ahrefs.com/blog/ai-brand-visibility-correlations/">Ahrefs correlations</a>). Video-and-transcript work pays off most on Perplexity and the Google surfaces; it is near-wasted effort for Copilot.</p>
+</blockquote>
+<h3>3.5 · Brand strength and web mentions · Grade B · Off-site / brand-wide</h3>
+<p>The best-supported authority signal. Branded search volume is the single strongest tested predictor of AI citation (r=0.334), and web mentions correlate far more strongly than backlinks (r=0.664 vs 0.218), with top-quartile brands earning &gt;10x more citations (<a href="https://www.5wpr.com/research/state-of-ai-citations-2026/">5W</a>; <a href="https://ahrefs.com/blog/ai-overview-brand-correlation/">Ahrefs, 75,000 brands</a>). Caveat: recognition is not discovery. A model can recognize 99.4% of named products yet surface them in only 3.32% of discovery queries (<a href="https://arxiv.org/html/2607.14035v1">survey</a>). Brand fame helps; it does not guarantee the brand gets pulled into an answer.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Brand authority is weighted most heavily by <strong>AI Mode</strong> (web-mention correlation 0.709, anchor-text 0.628) and least by <strong>ChatGPT</strong> (0.664 / 0.511) (<a href="https://ahrefs.com/blog/ai-brand-visibility-correlations/">Ahrefs correlations</a>). The practical read: <strong>ChatGPT is the most accessible entry point for a small or unknown brand</strong>, because it leans less on pre-existing fame; <strong>AI Mode</strong> is the hardest for a challenger to break into on authority alone.</p>
+</blockquote>
+<h3>3.6 · Presence and consistency across third-party platforms · Grade C · Off-site</h3>
+<p>Consistent presence on Reddit, YouTube, LinkedIn, review sites, and industry media broadens the surface an engine can cite. Drop the "3+ platforms = 2x visibility" stat — it has no primary support, and in reality only 16% of cited brands appear across all five major platforms. Volatile, too: 40–60% of cited sources change month to month, and the Google–Reddit content deal is in doubt as of July 2026 (<a href="https://www.cnbc.com/2026/07/22/reddit-stock-google-ai-content-deal.html">CNBC</a>). Build presence; don't over-index on any one platform.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Which third-party platform matters depends entirely on the engine. <strong>Copilot</strong> is a retail engine — amazon.com (14.4%) and walmart.com (10.0%) top its cited domains (<a href="https://ahrefs.com/blog/most-cited-domains-copilot/">Ahrefs</a>). <strong>Grok</strong> is social-dominated — its top four social platforms are 51.2% of citations (<a href="https://ahrefs.com/blog/most-cited-domains-grok/">Ahrefs</a>). Reddit share runs high on <strong>Gemini</strong>, <strong>AI Mode</strong>, and <strong>AIO</strong> (roughly 18–29%) but low on <strong>Copilot</strong> (2.6%) (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>). Match the platform investment to where the client's target engine actually looks.</p>
+</blockquote>
+<h3>3.7 · Wikipedia and entity disambiguation · Grade B · Off-site / homepage</h3>
+<p>Wikipedia remains a top-cited source, but its share fell sharply and swings by engine — 4.8% in AIO, 47.9% of ChatGPT's top-10 source share, 0.8% in Perplexity (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>; <a href="https://www.semrush.com/blog/most-cited-domains-ai/">Semrush</a>). An accurate Wikipedia/Wikidata entity, plus Organization schema on the homepage for disambiguation, is sound entity hygiene. It is not a reliable citation lever, and a single Google parameter change once halved Wikipedia's ChatGPT share overnight.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> Wikipedia mention-share is highest on <strong>Gemini</strong> (12.1%), <strong>Copilot</strong> (9.5%), and <strong>ChatGPT</strong> (8.9%), and lowest on <strong>AI Mode</strong> (4.9%), <strong>AIO</strong> (4.8%), and <strong>Grok</strong> (3.4%); <strong>Perplexity</strong> all but ignores it at 0.8% (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>; <a href="https://www.semrush.com/blog/most-cited-domains-ai/">Semrush</a>). A Wikipedia entity is worth pursuing for the Gemini/ChatGPT/Copilot cluster; it does almost nothing for Perplexity.</p>
+</blockquote>
+<hr />
+<h2>Tier 4 — Supporting hygiene: real, but smaller or contested</h2>
+<p>Do these. Do not build a pitch around them.</p>
+<h3>4.1 · Schema markup (Organization, Article, Person, VideoObject) · Grade D for citations, A for rich results · Homepage / article / video pages</h3>
+<p>The guidebook's biggest overclaim. A controlled <a href="https://ahrefs.com/blog/schema-ai-citations/">Ahrefs difference-in-differences test</a> on 1,885 pages that added JSON-LD found <strong>no citation uplift</strong> — AIO −4.6%, AI Mode +2.4%, ChatGPT +2.2%, the last two statistically indistinguishable from zero. Google states outright: "Structured data is not required for generative AI search. There is no special schema.org markup you need to add" (<a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Google</a>). The correlational studies (+13% to +47%) sit against this causal null; present it as unresolved. Keep schema for what it is proven to do — rich results, Organization disambiguation via <code>sameAs</code>/<code>iso6523</code>/<code>naics</code> on the homepage, knowledge-panel eligibility — and stop selling it as a citation driver.</p>
+<blockquote>
+<p><strong>Engine emphasis.</strong> The one controlled test breaks by engine: on <strong>AI Overviews</strong>, adding schema was associated with a <em>significant −4.6% drop</em> in citations; on <strong>AI Mode</strong> (+2.4%) and <strong>ChatGPT</strong> (+2.2%) the effect was statistically indistinguishable from zero (<a href="https://ahrefs.com/blog/schema-ai-citations/">Ahrefs</a>). No engine showed a positive citation effect. This is the clearest case in the framework where a tactic sold as universal has a measured null-to-negative result — keep schema for rich results, not for AIO citations.</p>
+</blockquote>
+<h3>4.2 · Internal linking and topic clusters · Grade B · Site-wide</h3>
+<p>Bidirectional links between a pillar and its supporting pages, with descriptive anchor text, help a model infer topical authority and reach deep pages. Descriptive anchors over "click here." Sound practice, correlational evidence.</p>
+<h3>4.3 · Descriptive alt text and file names · Grade C · Image-bearing pages</h3>
+<p>Now framed as a grounding signal for multimodal parsing (3.4), not just accessibility. Cheap, standard, worth doing everywhere.</p>
+<h3>4.4 · llms.txt · Grade D · Site root</h3>
+<p>Reframed from the guidebook's recommendation. Google does not support or endorse it, treats it "like any other text file," and suggests you <code>noindex</code> it if you publish one; logs show AI crawlers almost never fetch it (<a href="https://www.seroundtable.com/google-does-not-endorse-llms-txt-40789.html">Search Engine Roundtable</a>). Optional and low-impact. The endorsed agent-readiness direction is WebMCP and a clean accessibility tree / ARIA layer — covered in the agentic-readiness work, not here.</p>
+<h3>4.5 · FAQPage / HowTo schema · Grade D · FAQ / how-to pages</h3>
+<p>Distinct from visible Q&amp;A (2.3), which is A-grade. The <em>schema wrapper</em> alone shows no citation lift; the visible body Q&amp;A is what gets cited. Add the schema for rich-result eligibility, not for citations.</p>
+<hr />
+<h2>Which page do you evaluate, and why?</h2>
+<p>The old guidebook implicitly audited a blog post. That is a mistake. Different signals live on different pages, and AI engines cite different page types at very different rates. Citation mix is engine- and industry-specific: across 47,097 citations, ChatGPT pulled 46% from blogs and guides and 10% from brand and corporate pages (its highest), Perplexity 44% blogs and 22% comparison pages, Gemini 37% blogs, 24% comparison, 26% marketplace (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). The practical rule: <strong>pick the page for the signal you are testing, and set page-type strategy per client from their own citation data.</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Page type</th>
+<th>Evaluate it for</th>
+<th>Why this page</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Homepage</strong></td>
+<td>Organization schema, brand entity, <code>sameAs</code> disambiguation, HTTPS/canonical baseline</td>
+<td>The only page Google names for Organization structured data; anchors the brand entity and knowledge panel</td>
+<td><a href="https://developers.google.com/search/docs/appearance/structured-data/organization">Google Organization docs</a></td>
+</tr>
+<tr>
+<td><strong>About page</strong></td>
+<td>Entity signals, brand consistency, trust artifacts</td>
+<td>Named by Google as a page readers and raters look to for publisher background</td>
+<td><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google</a></td>
+</tr>
+<tr>
+<td><strong>Author page</strong></td>
+<td>Author identity, credentials, bio depth, <code>sameAs</code> to LinkedIn/ORCID</td>
+<td>Bylines should "lead to further information about the author"; this is where E-E-A-T author signals concentrate</td>
+<td><a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">Google</a>; <a href="https://www.seerinteractive.com/work/case-studies/author-bylines">Seer byline test</a></td>
+</tr>
+<tr>
+<td><strong>Blog / guide / pillar</strong></td>
+<td>Answer-first structure, evidence units, question headings, freshness, internal linking</td>
+<td>Highest citation <em>volume</em> on every engine (37–46%); tolerates more age than other types</td>
+<td><a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a></td>
+</tr>
+<tr>
+<td><strong>Comparison page</strong></td>
+<td>Tables, entity-rich comparison, freshness</td>
+<td>22–24% of Perplexity/Gemini citations; cited freshest, so kept current; AI Mode is built for complex comparisons</td>
+<td><a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>; <a href="https://developers.google.com/search/docs/appearance/ai-features">Google</a></td>
+</tr>
+<tr>
+<td><strong>Product / brand page</strong></td>
+<td>Non-commodity POV, first-party specs, freshness</td>
+<td>10% of ChatGPT citations — its highest of any page type; the surface where owned pages earn direct citation</td>
+<td><a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a></td>
+</tr>
+<tr>
+<td><strong>FAQ / question page</strong></td>
+<td>Visible Q&amp;A, question-phrased headings</td>
+<td>Question phrasing lifts AI Overview activation from 13.7% to 64.7%</td>
+<td><a href="https://arxiv.org/html/2607.14035v1">survey</a></td>
+</tr>
+<tr>
+<td><strong>Glossary / definition page</strong></td>
+<td>Definition-first blocks, extractable units</td>
+<td>High-influence pages are rich in definitions — a prime extractable evidence unit</td>
+<td><a href="https://arxiv.org/abs/2604.25707">citation-absorption study</a></td>
+</tr>
+<tr>
+<td><strong>Video watch page</strong></td>
+<td>VideoObject + chapters/timestamps, transcript, on-screen text</td>
+<td>78% of timestamped cited videos are cited multiple times; the transcript is what the model reads</td>
+<td><a href="https://developers.google.com/search/docs/appearance/structured-data/video">Google video docs</a>; <a href="https://otterly.ai/blog/youtube-ai-citation-study-2026/">Otterly.ai</a></td>
+</tr>
+<tr>
+<td><strong>Local / shopping page</strong></td>
+<td>Merchant Center + Business Profile freshness</td>
+<td>Google explicitly names keeping these current for generative features</td>
+<td><a href="https://developers.google.com/search/docs/appearance/ai-features">Google</a></td>
+</tr>
+<tr>
+<td><strong>robots.txt / WAF (not a page)</strong></td>
+<td>Three-way bot allowlist, WAF bot rules</td>
+<td>Where citation eligibility is silently won or lost, before content matters</td>
+<td><a href="https://platform.openai.com/docs/bots">OpenAI</a>; <a href="https://privacy.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Site-wide vs single-page.</strong> Tier 1 access checks and Tier 4 schema/linking are template- and site-level: audit them across the whole site, not one URL. Tier 2 content quality is per-page, sampled across the page types above. Tier 3 authority is brand-level and off-site. A real audit of a large site has to sample every page-type cluster — which is exactly why a shallow, fixed-cap crawl that stops at the first N URLs misses the point.</p>
+<hr />
+<h2>Measurement: the discipline that separates us from the vendors</h2>
+<p>The most important methodological finding of 2026: <strong>AI visibility is a distribution, not a number.</strong> One-off checks are unreliable. Answers vary across runs, phrasings, dates, and engines. Empirically, daily source overlap runs a Jaccard of 0.34–0.42, temperature-zero reruns change 9–28% of decisions, and 40–60% of cited sources turn over month to month (<a href="https://arxiv.org/html/2607.14035v1">survey</a>; <a href="https://www.emarketer.com/content/faq-on-geo-aeo--where-ai-search-seo-overlap-2026">EMARKETER</a>).</p>
+<p>The rule we adopt: <strong>any visibility measurement must vary along four dimensions — run, paraphrase, date, and engine — with at least 7–8 repetitions per prompt.</strong> Track visibility rate, average rank position, sentiment, citation sources, and share of voice. Watch Google's new Generative AI performance report in Search Console. And never chase visibility in isolation from fidelity: only 51.5% of AI-generated sentences are fully supported by their citations, so a page cited for a wrong claim is a liability, not a win.</p>
+<p>Per-engine strategies do not transfer. Cross-engine domain overlap runs as low as 26%, and URL-level agreement among Google's own surfaces is 0.11–0.18. Tune per engine, measure per engine, report per engine.</p>
+<hr />
+<h2>The prioritized master list, at a glance</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Element</th>
+<th>Tier</th>
+<th>Grade</th>
+<th>Primary page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1</td>
+<td>AI search-bot access (3-way allowlist + WAF)</td>
+<td>1</td>
+<td>A</td>
+<td>robots.txt / WAF</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Renders in raw HTML (no JS dependency)</td>
+<td>1</td>
+<td>A</td>
+<td>Every template</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Indexed and snippet-eligible</td>
+<td>1</td>
+<td>A</td>
+<td>Every page</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Query–document relevance</td>
+<td>1</td>
+<td>A</td>
+<td>Every page</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>Clean URLs + canonical + HTTPS</td>
+<td>1</td>
+<td>A/B</td>
+<td>Every template</td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>Current XML sitemap</td>
+<td>1</td>
+<td>B</td>
+<td>Site-wide</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>Performance (TTFB/LCP/CLS)</td>
+<td>1</td>
+<td>C</td>
+<td>Every template</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>Answer-first, front-loaded</td>
+<td>2</td>
+<td>A</td>
+<td>Blog/guide/FAQ</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Extractable evidence units</td>
+<td>2</td>
+<td>A</td>
+<td>Every content page</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>Question headings + visible Q&amp;A</td>
+<td>2</td>
+<td>A</td>
+<td>FAQ/blog/glossary</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>Entity-rich, definitive language</td>
+<td>2</td>
+<td>A</td>
+<td>Every content page</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>Single H1 + sequential headings</td>
+<td>2</td>
+<td>B</td>
+<td>Every page</td>
+</tr>
+<tr>
+<td>2.6</td>
+<td>Self-contained passages (not machine-chunking)</td>
+<td>2</td>
+<td>A</td>
+<td>Every content page</td>
+</tr>
+<tr>
+<td>2.7</td>
+<td>Lists and comparison tables</td>
+<td>2</td>
+<td>B</td>
+<td>Comparison/product</td>
+</tr>
+<tr>
+<td>2.8</td>
+<td>Non-commodity original POV</td>
+<td>2</td>
+<td>B</td>
+<td>Every content page</td>
+</tr>
+<tr>
+<td>2.9</td>
+<td>Freshness and active maintenance</td>
+<td>2</td>
+<td>A</td>
+<td>Every content page</td>
+</tr>
+<tr>
+<td>3.1</td>
+<td>Named credentialed author byline</td>
+<td>3</td>
+<td>C</td>
+<td>Blog/author page</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>Author / About page as trust artifact</td>
+<td>3</td>
+<td>C</td>
+<td>Author/About page</td>
+</tr>
+<tr>
+<td>3.3</td>
+<td>Unique, well-positioned proprietary data</td>
+<td>3</td>
+<td>B</td>
+<td>Research/pillar</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td>Multimodality + text layer</td>
+<td>3</td>
+<td>B</td>
+<td>Video/blog/product</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>Brand strength and web mentions</td>
+<td>3</td>
+<td>B</td>
+<td>Off-site</td>
+</tr>
+<tr>
+<td>3.6</td>
+<td>Cross-platform presence</td>
+<td>3</td>
+<td>C</td>
+<td>Off-site</td>
+</tr>
+<tr>
+<td>3.7</td>
+<td>Wikipedia + entity disambiguation</td>
+<td>3</td>
+<td>B</td>
+<td>Off-site/homepage</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>Schema markup</td>
+<td>4</td>
+<td>D (cite) / A (rich results)</td>
+<td>Homepage/article</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>Internal linking + clusters</td>
+<td>4</td>
+<td>B</td>
+<td>Site-wide</td>
+</tr>
+<tr>
+<td>4.3</td>
+<td>Alt text + file names</td>
+<td>4</td>
+<td>C</td>
+<td>Image pages</td>
+</tr>
+<tr>
+<td>4.4</td>
+<td>llms.txt</td>
+<td>4</td>
+<td>D</td>
+<td>Site root</td>
+</tr>
+<tr>
+<td>4.5</td>
+<td>FAQPage / HowTo schema</td>
+<td>4</td>
+<td>D</td>
+<td>FAQ/how-to</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Engine-specific weighting: which signals matter per LLM</h2>
+<p>Per-engine strategies do not transfer. Cross-engine domain overlap runs as low as 26% and URL-level agreement among Google's own surfaces is 0.11–0.18 (<a href="https://ahrefs.com/blog/ai-search-overlap/">Ahrefs</a>; <a href="https://arxiv.org/html/2607.14035v1">survey</a>). The elements in the framework above are the ones that move citations <em>somewhere</em>. This section says <em>where</em> — which engine rewards which signal, and, just as important, where the evidence runs out.</p>
+<p>Read this section as a set of tilts, not overrides. Relevance (1.4), answer-first structure (2.1), and extractable evidence (2.2) matter on every engine and are not repeated per profile. What follows is the delta on top of that shared base.</p>
+<p><strong>A note on the evidence.</strong> The strongest per-engine data covers the Google surfaces (AI Overviews, AI Mode), ChatGPT, Perplexity, and Gemini, because those are where the large citation datasets concentrate. Copilot and Grok have one solid domain-share dataset each. <strong>Claude, DeepSeek, and per-element causal data for Grok are genuine gaps</strong> — see the insufficient-evidence note at the end of this section. We do not fill those gaps with vendor guesses.</p>
+<h3>Per-engine profiles</h3>
+<h4>ChatGPT (OpenAI)</h4>
+<p>The most forgiving engine for a brand without pre-existing fame. Brand-authority signals correlate least strongly here (web mentions 0.664, anchors 0.511) of any measured engine (<a href="https://ahrefs.com/blog/ai-brand-visibility-correlations/">Ahrefs</a>), so relevance and on-page quality carry more weight — the best entry point for a challenger. Its citation mix skews to blogs and guides (46%) and, unusually, brand and corporate pages (10%, its highest of any engine) (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). Wikipedia carries real share (8.9% mention-share; 47.9% of its top-10 <em>source</em> share) (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>; <a href="https://www.semrush.com/blog/most-cited-domains-ai/">Semrush</a>). Freshness matters but less than on Gemini (73% of cited pages under one year), and new content accrues slowly then sticks — climbing to 42% citation share by day 30 (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>; <a href="https://www.semrush.com/blog/how-fast-do-ai-search-platforms-cite-new-content/">Semrush</a>). Schema showed no citation effect (+2.2%, null) (<a href="https://ahrefs.com/blog/schema-ai-citations/">Ahrefs</a>). Cites relatively few sources per answer (7.92) (<a href="https://www.qwairy.co/blog/provider-citation-behavior-q3-2025">Qwairy</a>). <strong><em>For small brands, ChatGPT is the first door that opens.</em></strong></p>
+<h4>Google AI Overviews (AIO)</h4>
+<p>The surface with the most engine-specific quirks. Question-phrased headings are close to a switch here — matching the query's question form lifts AIO <em>activation</em> from 13.7% to 64.7% (<a href="https://arxiv.org/html/2607.14035v1">survey</a>). It is the one place schema markup was associated with a <em>significant negative</em> citation effect (−4.6%) (<a href="https://ahrefs.com/blog/schema-ai-citations/">Ahrefs</a>). It cites deep: 31% of AIO citations come from URLs beyond the top 100 (<a href="https://ahrefs.com/blog/ai-overview-citations-top-10/">Ahrefs</a>). YouTube is its #1 cited domain (21.1%), and it carries the web's heaviest user-generated-content share (~18%) (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>). It is verbose, averaging 17.93 citations per answer (<a href="https://www.qwairy.co/blog/provider-citation-behavior-q3-2025">Qwairy</a>). Gate: the page must be Google-indexed and snippet-eligible — there is no separate AIO path (<a href="https://developers.google.com/search/docs/appearance/ai-features">Google</a>).</p>
+<h4>Google AI Mode</h4>
+<p>The hardest engine for a challenger to break into on authority. Brand-strength signals correlate most strongly here (web mentions 0.709, anchor text 0.628) (<a href="https://ahrefs.com/blog/ai-brand-visibility-correlations/">Ahrefs</a>) — a fame engine. It rewards speed: 36% of the content it cites is under 24 hours old, though that share decays to 26% by day 30 (<a href="https://www.semrush.com/blog/how-fast-do-ai-search-platforms-cite-new-content/">Semrush</a>) — chase same-week pickup with timely content. Comparison pages feature heavily, in line with its design for complex, multi-part queries (<a href="https://developers.google.com/search/docs/appearance/ai-features">Google</a>). Reddit share is high (~20%). Same index gate as AIO. Wikipedia matters less here (4.9%) than on ChatGPT or Gemini.</p>
+<h4>Perplexity</h4>
+<p>The engine most tied to classic Google ranking: 28.6% of its citations overlap the Google top-10 organic result, versus ~8% elsewhere (<a href="https://ahrefs.com/blog/ai-search-overlap/">Ahrefs</a>) — so traditional SEO position is a near-direct Perplexity lever. It is the heaviest YouTube citer (31.2% of cited domains) and leans on comparison pages (22% of its mix) (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>; <a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). It all but ignores Wikipedia (0.8%) and carries low UGC share (~1.5%) (<a href="https://www.semrush.com/blog/most-cited-domains-ai/">Semrush</a>). Least freshness-sensitive of the big three (65% under one year). The most citation-dense engine by far, at 21.87 sources per answer (<a href="https://www.qwairy.co/blog/provider-citation-behavior-q3-2025">Qwairy</a>). <strong><em>Rank on Google, publish comparison content, invest in video — Perplexity rewards all three.</em></strong></p>
+<h4>Gemini (Google)</h4>
+<p>The most recency-hungry engine measured: 78% of its cited pages are under one year old, 90% under two (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). Wikipedia share is the highest of any engine (12.1%) (<a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>). Comparison and marketplace pages are prominent in its mix (24% comparison, 26% marketplace) (<a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer</a>). Reddit share is high, though the exact figure is contested across datasets (see the conflict note below). Verbose, at 17.11 citations per answer (<a href="https://www.qwairy.co/blog/provider-citation-behavior-q3-2025">Qwairy</a>). Keep content current, hold a clean Wikipedia entity, structure comparisons well.</p>
+<h4>Copilot (Microsoft)</h4>
+<p>A retail-and-Bing engine, distinct from every other profile. Its top cited domains are amazon.com (14.4%) and walmart.com (10.0%) (<a href="https://ahrefs.com/blog/most-cited-domains-copilot/">Ahrefs</a>) — commercial and marketplace presence matters here in a way it does not elsewhere. It nearly ignores YouTube (2.5%) and Reddit (2.6%). It is Bing-backed, and Microsoft is the <em>only</em> vendor whose own docs warn against client-side rendering and reference generative optimization (<a href="https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a">Bing</a>) — so Bing Webmaster hygiene is the concrete lever. Wikipedia share is solid (9.5%). Cites the fewest sources per answer (2.47) (<a href="https://www.qwairy.co/blog/provider-citation-behavior-q3-2025">Qwairy</a>).</p>
+<h4>Grok (xAI)</h4>
+<p>The social-dominated engine. Its top four social platforms account for 51.2% of its citations (<a href="https://ahrefs.com/blog/most-cited-domains-grok/">Ahrefs</a>). Counter-intuitively, x.com itself is only 1.4% of citations — being on X is not the lever the platform's ownership implies. Wikipedia share is the lowest measured (3.4%). Beyond this one domain-share dataset, per-element causal evidence for Grok does not exist; treat everything else here as the shared base until better data lands.</p>
+<h4>Claude (Anthropic)</h4>
+<p>Strong first-party operational documentation, near-total citation-behavior gap. Anthropic clearly documents its bots (<code>Claude-User</code>, <code>Claude-SearchBot</code>, <code>ClaudeBot</code>) and states that blocking them reduces visibility in Claude's web search (<a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic</a>) — so crawler access (1.1) is the one confirmed lever. But no large public dataset breaks down what Claude cites by domain, page type, or signal, and its retrieval backend is undisclosed. <strong>We apply the shared base (relevance, answer-first, evidence units) and make no engine-specific claims for Claude.</strong> Anyone selling "Claude-specific" tactics is guessing.</p>
+<h4>DeepSeek</h4>
+<p>No usable data. We found no reliable first-party optimization documentation and no credible third-party citation-behavior dataset for DeepSeek's web-search mode during this research. <strong>We make no recommendations specific to DeepSeek</strong> and will revisit when primary evidence exists. Listing it here is deliberate: naming the blank is more useful to a client than inventing a profile.</p>
+<h3>Cross-engine emphasis matrix</h3>
+<p>How strongly each engine weights the signals that <em>do</em> vary by engine. <strong>High / Med / Low / Neg</strong> reflects the fetched evidence; <strong>n.a.</strong> means no engine-specific data exists (apply the shared base). This matrix is a planning aid, not a precise score — the underlying figures are mixed controlled and correlational, cited in each element and profile above.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Signal (element)</th>
+<th>ChatGPT</th>
+<th>AIO</th>
+<th>AI Mode</th>
+<th>Perplexity</th>
+<th>Gemini</th>
+<th>Copilot</th>
+<th>Grok</th>
+<th>Claude</th>
+<th>DeepSeek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google-index / SEO rank (1.3)</td>
+<td>Low</td>
+<td><strong>Gate</strong></td>
+<td><strong>Gate</strong></td>
+<td><strong>High</strong></td>
+<td>Gate</td>
+<td>Med (Bing)</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>No-JS rendering (1.2)</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>Med</td>
+<td><strong>High (stated)</strong></td>
+<td>High</td>
+<td>High</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Question headings (2.3)</td>
+<td><strong>High</strong></td>
+<td><strong>High</strong></td>
+<td>Med</td>
+<td>Med</td>
+<td>Med</td>
+<td>Med</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Comparison tables (2.7)</td>
+<td>Med</td>
+<td>Med</td>
+<td>High</td>
+<td><strong>High</strong></td>
+<td><strong>High</strong></td>
+<td>Med</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Freshness (2.9)</td>
+<td>Med</td>
+<td>Med</td>
+<td><strong>High (fast)</strong></td>
+<td>Low</td>
+<td><strong>High</strong></td>
+<td>Med</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Multimodal / YouTube (3.4)</td>
+<td>Med</td>
+<td><strong>High</strong></td>
+<td>Med</td>
+<td><strong>High</strong></td>
+<td>Med</td>
+<td><strong>Low</strong></td>
+<td>Med</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Brand strength (3.5)</td>
+<td><strong>Low</strong></td>
+<td>Med</td>
+<td><strong>High</strong></td>
+<td>Med</td>
+<td>Med</td>
+<td>Med</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Cross-platform mix (3.6)</td>
+<td>Blogs</td>
+<td>UGC/social</td>
+<td>Reddit</td>
+<td>Video</td>
+<td>Reddit/mktpl</td>
+<td><strong>Retail</strong></td>
+<td><strong>Social</strong></td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Wikipedia (3.7)</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td><strong>Neg (0.8%)</strong></td>
+<td><strong>High</strong></td>
+<td>High</td>
+<td>Low</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Schema for citations (4.1)</td>
+<td>Null</td>
+<td><strong>Neg (−4.6%)</strong></td>
+<td>Null</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+<tr>
+<td>Citations per answer</td>
+<td>7.92</td>
+<td>17.93</td>
+<td>n.a.</td>
+<td><strong>21.87</strong></td>
+<td>17.11</td>
+<td><strong>2.47</strong></td>
+<td>n.a.</td>
+<td>n.a.</td>
+<td>n.a.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Reading the matrix: a cell marked <strong>High</strong> means the fetched evidence shows this engine weights that signal more than the cross-engine norm; <strong>Neg</strong> means a measured negative or near-zero share; <strong>Gate</strong> means it is a hard eligibility requirement, not a tunable lever. Where a client targets one engine, work the High and Gate cells in that column first.</p>
+<h3>Where the evidence runs out</h3>
+<p>Three honesty notes that belong with this section, not buried:</p>
+<ul>
+<li><strong>Claude, DeepSeek, and Grok are under-measured.</strong> Claude has good operational docs but no citation dataset; DeepSeek has neither; Grok has one domain-share dataset and no per-element causal data. Any confident per-element claim for these three is unsupported.</li>
+<li><strong>One widely cited figure is internally contradictory.</strong> Gemini's Reddit share is reported at 29.2% by <a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a> but near-zero UGC by other datasets — we present it as an unresolved conflict, not a settled number.</li>
+<li><strong>We excluded several vendor blogs</strong> whose per-engine claims contradicted the controlled and large-sample sources and could not be traced to primary data. The matrix above is built only from first-party docs, controlled studies, and large correlational datasets.</li>
+</ul>
+<hr />
+<h2>What we still cannot prove — and will say so</h2>
+<p>Honesty is the product. Six areas where the evidence is genuinely missing, and where we tell clients we are acting on best judgment, not proof:</p>
+<ol>
+<li><strong>Author-entity consistency across the web</strong> as a citation signal — plausible, unmeasured.</li>
+<li><strong>First-party original data beating aggregated third-party data</strong> — no study isolates it.</li>
+<li><strong>A methodology / "how we collected this" section</strong> lifting citations — inferred from trust guidance only.</li>
+<li><strong>The transcript property</strong> on VideoObject moving citations — no measured effect.</li>
+<li><strong>Wikidata weighting</strong> specifically — unquantified.</li>
+<li><strong>Any peer-reviewed multimodal GEO measurement at all</strong> — a real gap across 45 studies.</li>
+</ol>
+<p><em>The agency that names its unknowns is the one clients keep.</em></p>
+<hr />
+<h2>Sources</h2>
+<p>All statistics in this framework trace to a primary or first-party source, linked inline at the point of use. The evidentiary spine is <a href="https://arxiv.org/html/2607.14035v1">A Critical Survey of Generative Engine Optimization (arXiv 2607.14035, July 2026)</a>, synthesizing 45 studies from November 2023 through July 2026. Platform behavior is sourced to first-party documentation from <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Google</a>, <a href="https://platform.openai.com/docs/bots">OpenAI</a>, <a href="https://privacy.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic</a>, and <a href="https://docs.perplexity.ai/guides/bots">Perplexity</a>. Large citation datasets are sourced to <a href="https://ahrefs.com/blog/most-cited-domains-ai-overviews/">Ahrefs</a>, <a href="https://www.seerinteractive.com/insights/study-content-recencys-impact-on-ai-visibility-in-2026">Seer Interactive</a>, <a href="https://www.semrush.com/blog/content-optimization-ai-search-study/">Semrush</a>, <a href="https://otterly.ai/blog/youtube-ai-citation-study-2026/">Otterly.ai</a>, and <a href="https://tinuiti.com/research-insights/research/ai-citation-trends-report/">Tinuiti</a>. Where a widely repeated statistic could not be traced to a primary source, it is flagged in the text and excluded from the grades.</p>
+<p><em>Prepared by Perplexity Computer for Wild Signal Agency · July 2026</em></p>
+  </article>
+</main>
+<footer class="site-footer">
+  <p>A Wild Signal field guide · Part of the <a href="https://daria-ship-it.github.io/wildsignal-research/index.html">Wild Signal GEO Research Library</a> · <a href="https://daria-ship-it.github.io/wildsignal-research/llms.txt">llms.txt</a></p>
+</footer>
+</body>
+</html>
